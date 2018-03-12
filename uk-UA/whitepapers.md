@@ -1,13 +1,14 @@
 ---
-layout: default
-title: Rust Whitepapers &middot; The Rust Programming Language
+layout: uk-UA/default
+title: Біла Книга Rust &middot; Мова Програмування Rust
 ---
 
-# Rust Whitepapers
+# Біла Книга Rust
 
-Read about companies' experiences with Rust in production. Would your company like to be featured
-in a case study? [Reach out!](mailto:community@rust-lang.org)
+Ознайомтесь із досвідом компаній, що використовують Rust у продакшн. Чи не хотіла б ваша
+компанія детальніше із цим ознайомитись? [Зв'язатись!](mailto:community@rust-lang.org)
 
-* [Rust at Tilde](/pdfs/Rust-Tilde-Whitepaper.pdf) - learn how Rust helps
-  [Tilde](http://www.tilde.io/), makers of [Skylight](https://www.skylight.io/), use minimal
-  resources to enable feature-rich performance monitoring of their customers' applications.
+* [Rust у Tilde](/pdfs/Rust-Tilde-Whitepaper.pdf) - дізнатись як Rust допомогла
+  [Tilde](http://www.tilde.io/), творцю [Skylight](https://www.skylight.io/), використовуючи
+  мінімальні ресурси, забезпечити багатофункціональний моніторинг продуктивності 
+  застосунків їх клієнтів.
