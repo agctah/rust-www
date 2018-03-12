@@ -239,7 +239,7 @@ title: Спільнота Rust &middot; Мова програмування Rust
 
 [teams]: team.html
 [core_team]: team.html#Core-team
-[language_team]: team.html#Language-design-team
+[language_team]: team.html#Language-team
 [library_team]: team.html#Library-team
 [compiler_team]: team.html#Compiler-team
 [dev_tools_team]: team.html#Dev-tools-team
