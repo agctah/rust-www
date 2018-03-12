@@ -1,20 +1,18 @@
 ---
-layout: basic
-title: The Rust Programming Language
+layout: uk-UA/basic
+title: Мова програмування Rust
 ---
 
     <div class="row pitch-row">
       <div class="col-md-8">
         <p class="pitch">
-          <b>Rust</b> is a systems programming language
-          that runs blazingly fast,
-          prevents segfaults,
-          and guarantees thread safety.
+          <b>Rust</b> — Надзвичайно швидка мова для системного програмування,
+          що запобігає помилкам сегментації та гарантує багатонитеву безпеку.
         </p>
       </div>
       <div class="col-md-4">
         <a class="release-button" href="install.html">
-          <div class="release-version">Install Rust <span>{{ site.stable }}</span></div>
+          <div class="release-version">Встановити Rust <span>{{ site.stable }}</span></div>
         </a>
         <div class="release-date">
           <a href="{{ site.stable_blog }}">{{ site.stable_date | date: "%B %-d, %Y" }}</a>
@@ -22,29 +20,29 @@ title: The Rust Programming Language
       </div>
       <div class="col-md-12">
         <p class="friends-pitch">
-          <a href="friends.html">See who's using Rust</a>, and <a href="whitepapers.html">read more about Rust in production</a>.
+          <a href="friends.html">Глянути, хто користується Rust</a> і <a href="whitepapers.html">почитати більше про Rust у продакшн</a>.
         </p>
       </div>
     </div>
 
     <div class="row code-row">
       <div class="col-md-4">
-      <h2>Featuring</h2>
+      <h2>Можливості</h2>
       <ul class="laundry-list">
-        <li>zero-cost abstractions</li>
-        <li>move semantics</li>
-        <li>guaranteed memory safety</li>
-        <li>threads without data races</li>
-        <li>trait-based generics</li>
-        <li>pattern matching</li>
-        <li>type inference</li>
-        <li>minimal runtime</li>
-        <li>efficient C bindings</li>
+        <li>абстракції з нульовою вартістю</li>
+        <li>семантика переміщення</li>
+        <li>гарантована безпека пам'яті</li>
+        <li>ниті без гонки даних</li>
+        <li>узагальнення через риси</li>
+        <li>співставлення зі зразком</li>
+        <li>виведення типів</li>
+        <li>мінімальне середовище виконання</li>
+        <li>ефективне зв'язування із C</li>
       </ul>
       </div>
       <div class="col-md-8">
         <div id="active-code">
-          <button type="button" class="btn btn-primary btn-sm" id="run-code">Run</button>
+          <button type="button" class="btn btn-primary btn-sm" id="run-code">Запустити</button>
           <div id="editor">{% include example.rs %}</div>
           <div id="result" data-msg-running="Running...">
             <a id="playlink"><i class="icon-link-ext"></i></a>
@@ -52,7 +50,7 @@ title: The Rust Programming Language
         </div>
         <div id="static-code">{% include example.rs.html %}</div>
         <div class="more-examples">
-          <a href="http://rustbyexample.com/">More examples</a>
+          <a href="http://rustbyexample.com/">Більше прикладів</a>
         </div>
       </div>
     </div>
