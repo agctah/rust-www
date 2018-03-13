@@ -1,101 +1,87 @@
 ---
-layout: default
-title: Rust Security Policy &middot; The Rust Programming Language
+layout: uk-UA/default
+title: Політика безпеки Rust &middot; Мова програмування Rust
 ---
 
-<h1>Rust Security Policy</h1>
+<h1>Політика безпеки Rust</h1>
 
-<h2>Reporting a Bug</h2>
+<h2>Повідомлення про помилку</h2>
 
-<p>Safety is one of the core principles of Rust, and to that end, we would
-like to ensure that Rust has a secure implementation. Thank you for taking the
-time to responsibly disclose any issues you find.</p>
+<p>Безпека - один із ключових принципів Rust, у зв'язку з цим ми хочемо бути впевненими в тому,
+що реалізація Rust є безпечною. Дякуємо вам, що знайшли час на те, аби зі всією відповідальністю
+поділитись проблемами, які ви відшукали.</p>
 
-<p>All security bugs in the Rust distribution should be reported by email to
-<a href="mailto:security@rust-lang.org">security@rust-lang.org</a>. This list
-is delivered to a small security team. Your email will be acknowledged within 24
-hours, and you'll receive a more detailed response to your email within 48
-hours indicating the next steps in handling your report. If you would like, you
-can encrypt your report using <a href="../rust-security-team-key.gpg.ascii">our public key</a>.
-This key is also <a
-href="https://pgp.mit.edu/pks/lookup?op=vindex&amp;search=0xEFB9860AE7520DAC">On
-MIT's keyserver</a> and <a href="#key">reproduced below</a>.
+<p>Про всі вади безпеки в Rust слід повідомляти електронною поштою на
+<a href="mailto:security@rust-lang.org">security@rust-lang.org</a>.
+Наданий перелік передається невеликій команді безпеки. Ваше повідомлення буде підтверджено протягом 24 годин,
+більш детальну відповідь можна очікувати протягом 48 годин, там йтиметься про наступні кроки в обробці вашого
+звіту. Якщо ви бажаєте - можете зашифрувати ваш звіт за допомогою <a href="../rust-security-team-key.gpg.ascii">нашого публічного ключа</a>.
+Цей ключ також <a href="https://pgp.mit.edu/pks/lookup?op=vindex&amp;search=0xEFB9860AE7520DAC">на сервері ключів MIT</a>
+і <a href="#key">відтворений нижче</a>.
 
-<p>This email address receives a large amount of spam, so be sure to use a
-descriptive subject line to avoid having your report be missed. After the
-initial reply to your report, the security team will endeavor to keep you
-informed of the progress being made towards a fix and full announcement. As
-recommended by <a href="https://en.wikipedia.org/wiki/RFPolicy">RFPolicy</a>,
-these updates will be sent at least every five days. In reality, this is more
-likely to be every 24-48 hours.</p>
+<p>На дану електронну адресу надходить велика кількість спаму, тому ретельно опишіть тему листа,
+щоб уникнути втрати вашого повідомлення. Після початкової відповіді на ваш звіт, команда безпеки буде намагатись інформувати
+вас про прогрес, досягнутий у виправлені вади та повному її оголошенні.
+Згідно рекомендацій <a href="https://en.wikipedia.org/wiki/RFPolicy">RFPolicy</a> подібні оновлення надсилатимуться
+принаймні кожні п'ять днів. Зазвичай це ймовірніше буде кожні 24-48 годин.</p>
 
-<p>If you have not received a reply to your email within 48 hours, or have not
-heard from the security team for the past five days, there are a few steps you
-can take:</p>
+<p>Якщо ж ви не отримали відповідь на свій лист протягом 48 годин або не чули звісток від команди безпеки останні 5 днів -
+ви можете здійснити наступні кроки:</p>
 
 <ul>
-    <li>Contact the current security coordinator (<a href="mailto:steve@steveklabnik.com">Steve Klabnik</a>
-        (<a href="https://pgp.mit.edu/pks/lookup?op=vindex&amp;search=0xDAE717EFE9424541">public key</a>)) directly.</li>
-    <li>Contact the back-up contact (<a href="mailto:alex@alexcrichton.com">Alex Crichton</a>
-        (<a href="https://pgp.mit.edu/pks/lookup?op=vindex&amp;search=0x5D54B6F551FF5E33">public key</a>)) directly.</li>
-    <li>Post on the <a href="https://internals.rust-lang.org/">internals forums</a>
-    or ask in the #rust-internals IRC room on irc.mozilla.org.</li>
+    <li>Звернутись до поточного координатора безпеки (<a href="mailto:steve@steveklabnik.com">Steve Klabnik</a>
+        (<a href="https://pgp.mit.edu/pks/lookup?op=vindex&amp;search=0xDAE717EFE9424541">публічний ключ</a>)) напряму.</li>
+    <li>Звернутись до резервної особи (<a href="mailto:alex@alexcrichton.com">Alex Crichton</a>
+        (<a href="https://pgp.mit.edu/pks/lookup?op=vindex&amp;search=0x5D54B6F551FF5E33">публічний ключ</a>)) напряму.</li>
+    <li>Написати на <a href="https://internals.rust-lang.org/">форум розробки</a>
+    або запитати у IRC каналі #rust-internals на irc.mozilla.org.</li>
 </ul>
 
-<p>Please note that the discussion forums and #rust-internals IRC channel are
-public areas. When escalating in these venues, please do not discuss your
-issue. Simply say that you're trying to get a hold of someone from the security
-team.</p>
+<p>Будь ласка, зважайте на те, що форуми обговорень та IRC канал #rust-internals є загальнодоступними.
+Коли ви піднімаєте у них питання, будь ласка, не обговорюйте проблему. Просто скажіть, що намагаєтесь зв'язатись
+із ким-небудь із команди безпеки.</p>
 
-<h2>Disclosure Policy</h2>
+<h2>Політика розголошення інформації</h2>
 
-<p>The Rust project has a 5 step disclosure process.</p>
+<p>Процес розголошення у Rust складається з 5 кроків.</p>
 
 <ol>
-<li>The security report is received and is assigned a primary handler. This
-person will coordinate the fix and release process.</li>
+<li>Звіт про ваду безпеки надійшов і призначено відповідальну особу. Ця людина координуватиме процес виправлення та випуску.</li>
 
-<li>The problem is confirmed and a list of all affected versions is determined.</li>
+<li>Проблему підтверджено і визначено перелік версій, до яких вона має відношення.</li>
 
-<li>Code is audited to find any potential similar problems.</li>
+<li>Проведено аудит коду з метою виявлення потенційно можливих подібних проблем.</li>
 
-<li>Fixes are prepared for all releases which are still under maintenance.
-These fixes are not committed to the public repository but rather held locally
-pending the announcement.</li>
+<li>Підготовлені виправлення для всіх випусків, які ще підтримуються.
+Ці виправлення не потрапляють до публічного репозиторію та залишаються локально, очікуючи на розголошення.</li>
 
-<li>On the embargo date, the <a href="https://groups.google.com/forum/#!forum/rustlang-security-announcements">
-Rust security mailing list</a> is sent a copy of the announcement. The changes
-are pushed to the public repository and new builds are deployed to
-rust-lang.org.  Within 6 hours of the mailing list being notified, a copy of
-the advisory will be published on the Rust blog.</li> </ol>
+<li>Із настанням дня зняття заборони <a href="https://groups.google.com/forum/#!forum/rustlang-security-announcements">
+список розсилки безпеки Rust</a> розсилає копію оголошення. Зміни додаються до публічного репозиторію і нові збірки
+відвантажуються до rust-lang.org. Протягом наступних 6 годин після надісланого оголошення, копія консультативної інформації
+буде опублікована в блозі Rust.</li> </ol>
 
-<p>This process can take some time, especially when coordination is required
-with maintainers of other projects. Every effort will be made to handle the bug
-in as timely a manner as possible, however it's important that we follow the
-release process above to ensure that the disclosure is handled in a consistent
-manner.</p>
+<p>Цей процес може тривати деякий час, особливо якщо потрібна координація із супроводжуючими інших проектів.
+Буде зроблено все можливе задля усунення вади якомога швидше, однак важливо слідувати вищенаведеному процесу підготовки випуску,
+щоб забезпечити цілісне розкриття інформації.</p>
 
-<h2>Receiving Security Updates</h2>
+<h2>Отримання оновлень безпеки</h2>
 
-<p>The best way to receive all the security announcements is to subscribe to
-the <a
-href="https://groups.google.com/group/rustlang-security-announcements/subscribe">Rust
-security announcements mailing list</a> (alternatively by sending an email to <a
+<p>Найкращий спосіб отримати всі повідомлення про безпеку - підписатися на
+<a href="https://groups.google.com/group/rustlang-security-announcements/subscribe">список розсилки повідомлень про безпеку Rust</a> (або надіславши електронний лист на <a
 href="mailto:rustlang-security-announcements+subscribe@googlegroups.com">rustlang-security-announcements+subscribe@googlegroups.com</a>).
-The mailing list is very low traffic, and it receives the public notifications the
-moment the embargo is lifted.</p>
+Список розсилки не надсилає багато повідомлень та до нього потрапляють публічні нотифікації про зняття заборони.</p>
 
-<h3>Advance notification</h3>
+<h3>Попереднє повідомлення</h3>
 
-<p>We will announce vulnerabilities 72 hours before the embargo is lifted to
+<p>Ми повідомлятимемо про вразливі місця за 72 до того, як буде знято заборону на
 <a href="http://oss-security.openwall.org/wiki/mailing-lists/distros">distros@openwall</a>,
-so that Linux distributions can update their packages.</p>
+тож дистрибутиви Linux можуть оновити свої пакунки.</p>
 
-<h2>Comments on This Policy</h2>
+<h2>Коментарі щодо даної політики</h2>
 
-<p>If you have any suggestions to improve this policy, please send an email to
+<p>Якщо у вас є будь-які пропозиції стосовно покращення даної політики, будь ласка, надішліть електронний лист на адресу
 <a href="mailto:security@rust-lang.org">security@rust-lang.org</a>.</p>
 
-<h2 id="key">Plaintext PGP Key</h2>
+<h2 id="key">Текст ключа PGP</h2>
 
 <pre><code>{% include rust-security-team-key.gpg.ascii %}</code></pre>
