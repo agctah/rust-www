@@ -1,16 +1,17 @@
 ---
-layout: default
-title: Rust User Groups &middot; The Rust Programming Language
+layout: uk-UA/default
+title: Групи користувачів &middot; Мова програмування Rust
 ---
 
-# Rust User Groups
+# Групи Користувачів Rust
 
-There are more than 90 Rust User Groups worldwide in over 35
-countries. Rustaceans meet periodically in Rust User Groups. Its a
-great introduction to the community and a great way to learn and
-socialize with other people with a similar interest.  Meetings are
-usually informal and open to everyone. If you have started a new user
-group and wish to add it to this list, please contact the [Rust Community Team](./team.html#Community-team) or
-even better, open a pull request against [this website](https://github.com/rust-lang/rust-www/blob/master/_data/usergroups.yml).
+В світі налічується більше 90 груп користувачів Rust у більш 
+ніж 35 країнах. Растацеанці із цих груп періодично зустрічаються.
+Це чудовий спосіб влитись у спільноту, навчатись чогось нового і поспілкуватись 
+із однодумцями. Зустрічі зазвичай проводяться щомісяця в досить неформальній
+атмосфері та відкриті для всіх охочих. Якщо ви заснували нову групу користувачів
+і бажаєте додати її до цього списку - будь ласка, зв'яжіться із
+[командою спільноти Rust](./team.html#Community-team) або (що значно краще) залиште
+запит на забирання змін на [цьому сайті](https://github.com/rust-lang/rust-www/blob/master/_data/usergroups.yml).
 
 {% include user-group-list.html %}

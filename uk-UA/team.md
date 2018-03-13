@@ -1,6 +1,6 @@
 ---
 layout: uk-UA/default
-title: Команда Rust &middot; Мова Програмування Rust
+title: Команда Rust &middot; Мова програмування Rust
 extra_css:
   - team.css
 
