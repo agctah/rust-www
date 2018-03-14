@@ -1,75 +1,68 @@
 ---
-layout: default
-title: Other Installation Methods &middot; The Rust Programming Language
+layout: uk-UA/default
+title: Інші шляхи встановлення &middot; Мова програмування Rust
 ---
 
-# Other Rust Installation Methods
+# Інші шляхи встановлення Rust
 
-- [Which installer should you use?](#which)
-- [Other ways to install `rustup`](#more-rustup)
-- [Standalone installers](#standalone)
-- [Source code](#source)
+- [Який встановлювач вам слід використати?](#which)
+- [Інші шляхи встановлення `rustup`](#more-rustup)
+- [Автономні встановлювачі](#standalone)
+- [Початковий код](#source)
 
-## Which installer should you use?
+## Який встановлювач вам слід використати?
 <span id="which"></span>
 
-Rust runs on many platforms, and there are many ways to install Rust. If you
-want to install Rust in the most straightforward, recommended way, then follow
-the instructions on the main [installation page].
+Rust працює на багатьох платформах і є багато способів встановлення Rust. Якщо ви бажаєте встановити Rust
+у найпростіший, рекомендований, спосіб - тоді притримуйтесь вказівок на головній [сторінці встановлення][installation page].
 
-That page describes installation via [`rustup`], a tool that manages multiple
-Rust toolchains in a consistent way across all platforms Rust supports. Why
-might one _not_ want to install using those instructions?
+Та сторінка описує встановлення через [`rustup`] - інструмент, який впевнено оперує багатьма інструментами розробки 
+Rust на всіх платформах, що підтримуються Rust. Чому ж хтось може _не_ захотіти встановлювати відповідно цих вказівок?
 
-- Offline installation. `rustup` downloads components from the internet on
-  demand. If you need to install Rust without access to the internet, `rustup`
-  is not suitable.
-- Preference for the system package manager. On Linux in particular, but also on
-  macOS with [Homebrew], and Windows with [Chocolatey], developers sometimes
-  prefer to install Rust with their platform's package manager.
-- Preference against `curl | sh`. On Unix, we usually install `rustup` by
-  running a shell script via `curl`. Some have concerns about the security of
-  this arrangement and would prefer to download and run the installer
-  themselves.
-- Validating signatures. Although `rustup` performs its downloads over HTTPS,
-  the only way to verify the signatures of Rust installers today is to do so
-  manually with the standalone installers.
-- GUI installation and integration with "Add/Remove Programs" on
-  Windows. `rustup` runs in the console and does not register its installation
-  like typical Windows programs. If you prefer a more typical GUI installation
-  on Windows there are standalone `.msi` installers. In the future
-  `rustup` will also have a GUI installer on Windows.
+- Оффлайн встановлення. `rustup` завантажує компоненти із інтернету за необхідності. 
+  Якщо вам потрібно встановити Rust без доступу до інтернету - `rustup` не підходить.
+- Надається перевага системному менеджеру пакетів. У Linux зокрема, але також і в
+  macOS із [Homebrew] та Windows із [Chocolatey], розробники інколи вважають за краще
+  встановити Rust, використовуючи системний менеджер пакетів.
+- Небажання використовувати `curl | sh`. У Unix ми зазвичай встановлюємо `rustup` шляхом виконання 
+  скрипта командної оболонки через `curl`. Дехто хвилюється з приводу безпеки даного підходу 
+  і надає перевагу завантаженню та запуску встановлювача самотужки.
+- Перевірка підписів. Хоча `rustup` здійснює завантаження через HTTPS,
+  єдиний спосіб перевірки підписів встановлювачів Rust, на сьогоднішній день - це ручний спосіб із автономними встановлювачами.
+- Встановлювач із графічним інтерфейсом та інтеграція із "Add/Remove Programs" у
+  Windows. `rustup` виконується в консолі і не реєструє своє встановлення на зразок типових Windows-програм.
+  Якщо ви надаєте перевагу більш типовому встановленню у Windows із графічним інтерфейсом - у нас є автономний `.msi` встановлювач.
+  В майбутньому `rustup` також матиме графічний встановлювач для Windows.
+  
+Підтримка платформ у Rust визначається [трьома рівнями][three tiers], які тісно пов'язані
+із доступними методами встановлення: загалом проект Rust надає бінарні збірки для всіх платформ рівня 1 та рівня 2
+і всі вони піддаються встановленню через `rustup`. Деяким платформам рівня 2, все-таки, доступна лише стандартна 
+бібліотека, але не сам компілятор; це означає, що вони є лише цілями крос-компіляції; код Rust може виконуватись на таких
+платформах, але на них не можна запустити компілятор. Такі цілі можуть бути встановлені завдяки команді `rustup target add`.
 
-Rust's platform support is defined in [three tiers], which correspond closely
-with the installation methods available: in general, the Rust project provides
-binary builds for all tier 1 and tier 2 platforms, and they are all installable
-via `rustup`. Some tier 2 platforms though have only the standard library
-available, not the compiler itself; that is, they are cross-compilation targets
-only; Rust code can run on those platforms, but they do not run the compiler
-itself. Such targets can be installed with the `rustup target add` command.
+## Інші шляхи встановлення `rustup`
+<span id="more-rustup"></span>
 
-## Other ways to install `rustup`
-<span id="rustup"></span>
+Шляхи встановлення `rustup` відрізняються для різних платформ:
 
-The way to install `rustup` differs by platform:
+* Unix - виконайте `curl https://sh.rustup.rs -sSf | sh` в командній оболонці.
+  Це призведе до завантаження та запуску [`rustup-init.sh`], який в свою чергу
+  завантажить та запустить правильну версію виконуваного файла `rustup-init`
+  для вашої платформи.
+* Windows - завантажте та запустіть [`rustup-init.exe`].
 
-* On Unix, run `curl https://sh.rustup.rs -sSf | sh` in your
-  shell. This downloads and runs [`rustup-init.sh`], which in turn
-  downloads and runs the correct version of the `rustup-init`
-  executable for your platform.
-* On Windows, download and run [`rustup-init.exe`].
-
-`rustup-init` can be configured interactively, and all options can additionally
-be controlled by command-line arguments, which can be passed through the shell
-script. Pass `--help` to `rustup-init` as follows to display the arguments
-`rustup-init` accepts:
+`rustup-init` можна налаштовувати інтерактивно і всі опції можуть додатково
+контролюватись аргументами командного рядка, що можуть бути передані через
+скрипт командної оболонки. Передайте `--help` до `rustup-init`, як показано нижче, 
+для того, щоб показати аргументи, які приймає `rustup-init`:
 
 ```
 curl https://sh.rustup.rs -sSf | sh -s -- --help
 ```
 
-If you prefer not to use the shell script, you may directly download
-`rustup-init` for the platform of your choice:
+Якщо ви надаєте перевагу варіанту без використання скриптів оболонки - можете
+безпосередньо завантажити
+`rustup-init` для платформи за вашим вибором:
 
 <div class="rustup-init-table">
   {% for column in site.data.platforms.rustup %}
@@ -89,27 +82,27 @@ If you prefer not to use the shell script, you may directly download
   {% endfor %}
 </div>
 
-## Standalone installers
+## Автономні встановлювачі
 <span id="standalone"></span>
 
-The official Rust standalone installers contain a single release of Rust, and
-are suitable for offline installation. They come in three forms: tarballs
-(extension `.tar.gz`), that work in any Unix-like environment, Windows
-installers (`.msi`), and Mac installers (`.pkg`). These installers come with
-`rustc`, `cargo`, `rustdoc`, the standard library, and the standard
-documentation, but do not provide access to additional cross-targets like
-`rustup` does.
+Офіційні автономні встановлювачі Rust містять один реліз Rust і підходять для
+встановлення в оффлайн режимі. Вони можуть бути трьох різних видів: архів tar
+(розширення `.tar.gz`), який працює у будь-якому Unix-подібному середовищі, встановлювач Windows
+ (`.msi`) і встановлювач Mac (`.pkg`). Ці встановлювачі постачаються із
+`rustc`, `cargo`, `rustdoc`, стандартною бібліотекою і стандартною документацією,
+ але не надають доступу до додаткових можливостей на відміну від
+`rustup`.
 
-The most common reasons to use these are:
+Найчастіше причинами їх використання є:
 
-- Offline installation
-- Prefering a more platform-integrated, graphical installer on Windows
+- Оффлайн встановлення
+- Надання переваги більш інтегрованому в платформу, графічному встановлювачу Windows
 
-Each of these binaries is signed with the [Rust signing key], which is
-[available on keybase.io], by the Rust build infrastructure, with
-[GPG]. In the tables below, the `.asc` files are the signatures.
+Кожен із цих бінарників підписано [ключем підписування Rust][Rust signing key], який
+[доступний на keybase.io][available on keybase.io], інфраструктурою побудови Rust із
+[GPG]. Підписи знаходяться у файлах `.asc`, що наведені в таблицях нижче.
 
-Past releases can be found in [the archives].
+Попередні релізи можна знайти в [архіві][the archives].
 
 {% for channel in site.channels %}
 
@@ -145,27 +138,27 @@ Past releases can be found in [the archives].
 
 {% endfor %}
 
-## Source code
+## Початковий код
 <span id="source"></span>
 
 <div class="installer-table">
   <div>
     <div>
-      <span>Stable</span>
+      <span>Стабільний</span>
       <a href="https://static.rust-lang.org/dist/rustc-{{ site.stable }}-src.tar.gz">.tar.gz</a>
       <a href="https://static.rust-lang.org/dist/rustc-{{ site.stable }}-src.tar.gz.asc">.asc</a>
     </div>
   </div>
   <div>
     <div>
-      <span>Beta</span>
+      <span>Бета</span>
       <a href="https://static.rust-lang.org/dist/rustc-beta-src.tar.gz">.tar.gz</a>
       <a href="https://static.rust-lang.org/dist/rustc-beta-src.gz.asc">.asc</a>
     </div>
   </div>
   <div>
     <div>
-      <span>Nightly</span>
+      <span>Нічний</span>
       <a href="https://static.rust-lang.org/dist/rustc-nightly-src.tar.gz">.tar.gz</a>
       <a href="https://static.rust-lang.org/dist/rustc-nightly-src.tar.gz.asc">.asc</a>
     </div>
