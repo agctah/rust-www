@@ -1,6 +1,6 @@
 ---
-layout: default
-title: Rust Legal Policies &middot; The Rust Programming Language
+layout: uk-UA/default
+title: Правова політика Rust &middot; Мова програмування Rust
 ---
 
 # Copyright
