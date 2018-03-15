@@ -1,8 +1,8 @@
 ---
-layout: default
-title: Translating rust-lang.org to other languages to adapt internationalization 
+layout: uk-UA/default
+title: Перекласи rust-lang.org іншими мовами, щоб покращити інтернаціоналізацію
 ---
 
-# Rust is universal
+# Rust - всесвітній
 
-Some docs on contributing translations!
+Деякі документи стосовно сприяння перекладам.
