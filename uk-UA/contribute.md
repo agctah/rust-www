@@ -1,50 +1,43 @@
 ---
-layout: default
-title: Contributing to Rust &middot; The Rust Programming Language
+layout: uk-UA/default
+title: Сприяння Rust &middot; Мова програмування Rust
 ---
 
-# Contributing to Rust
+# Сприяння Rust
 
-You've started learning Rust. You love it, and you want to be a part
-of it. If you're not sure how to get involved, then this page
-will help.
+Ви розпочали вивчати Rust. Вам це подобається і ви хочете бути частиною цього.
+Якщо ви не впевнені в тому, як долучитись - то ця сторінка допоможе вам у цьому.
 
-**Found a bug and need to report it?** [Follow the bug reporting
-guide][bugs]. Thanks in advance!
+**Знайшли ваду і потрібно про це повідомити?** [Слідуйте керівництву повідомлення про помилки][bugs]. Наперед дякуємо!
 
-Rust is an expansive system of projects, the most prominent of which
-are maintained by [The Rust Project Developers][devs] in [the
-rust-lang organization on GitHub][rust-lang]. Newcomers may be
-interested in the project's [CONTRIBUTING.md] file, which explains the
-mechanics of contributing to [rust-lang/rust].
+Rust - це широка система проектів, найзначніші з яких супроводжуються [Розробниками Проекту Rust][devs] у [організації
+rust-lang на GitHub][rust-lang]. Новачків може зацікавити файл проекту
+[CONTRIBUTING.md], який пояснює механізми сприяння [rust-lang/rust].
 
-There are many ways to contribute to the success of Rust.
-This guide focuses on a few avenues for the new contributor:
+Є багато способів посприяти успіху Rust.
+Це керівництво зосереджується на декількох напрямках для нового учасника:
 
-* [Finding, triaging and fixing issues](contribute-bugs.html). The
-  basic work of maintaining a large and active project like Rust.
-* [Documentation](contribute-docs.html). Not just official
-  documentation, but also for crates, blog posts, and other unofficial
-  sources.
-* [Community building](contribute-community.html). Helping your fellow
-  Rustacean, and expanding the reach of Rust.
-* [Tooling, IDEs and infrastructure](contribute-tools.html). The
-  important pieces that make using a language practical and painless.
-* [Libraries](contribute-libs.html). Rust's suitability for any
-  particular task is mostly dependent on availability of quality
-  libraries.
-* [Language, compiler and the standard
-  library](contribute-compiler.html). Language design, feature
-  implementation, performance improvement.
-* [Internationalization](contribute-translations.html). Help spread the
-  Rust love by translating our site to every language.
+* [Пошук, сортування та виправлення вад](contribute-bugs.html). Основна
+  робота з підтримання такого великого та активного проекту, як Rust.
+* [Написання документації](contribute-docs.html). Не лише офіційної документації,
+  але також для пакетів, публікації у блогах та інших неофіційних джерелах.
+* [Побудова спільноти](contribute-community.html). Допомога вашим друзям Растацеанцям та
+  розширення доступності Rust.
+* [Інструменти, IDE та інфраструктура](contribute-tools.html). Важливі складові, що
+  роблять використання мови практичним та безболісним.
+* [Бібліотеки](contribute-libs.html). Придатність Rust для вирішення певної
+  проблеми здебільшого залежить від наявності та якості бібліотек.
+* [Мова, компілятор та стандартна бібліотека](contribute-compiler.html). Дизайн мови, нові можливості,
+  реалізація та покращення ефективності.
+* [Інтернаціоналізація](contribute-translations.html). Допоможіть поширити любов
+  Rust, переклавши наш сайт усіма мовами.
 
-If you need additional guidance ask on [#rust-internals] or
+Якщо вам потрібні додаткові інструкції - запитайте на [#rust-internals] або
 [internals.rust-lang.org].
 
-We pride ourselves on maintaining civilized discourse, and to that end
-contributors are expected to follow our [Code of Conduct][coc]. If you
-have questions about this please inquire with the [community team].
+Ми маємо за честь проводити цивілізовані дискусії, у зв'язку із цим очікуємо,
+що люди, які сприяють розвитку Rust, будуть дотримуватись [кодексу поведінки][coc]. 
+Якщо ви маєте запитання з цього приводу, будь ласка, зверніться до [команди спільноти][community team].
 
 <!--
 TODO: Write a guide to rust processes and governance to link from here
@@ -56,8 +49,8 @@ libs / community building
 [#rust-internals]: https://client00.chat.mibbit.com/?server=irc.mozilla.org&channel=%23rust-internals
 [CONTRIBUTING.md]: https://github.com/rust-lang/rust/blob/master/CONTRIBUTING.md
 [bugs]: https://github.com/rust-lang/rust/blob/master/CONTRIBUTING.md#bug-reports
-[coc]: https://www.rust-lang.org/conduct.html
-[community team]: https://www.rust-lang.org/team.html#Community
+[coc]: conduct.html
+[community team]: team.html#Community-team
 [dev_proc]: community.html#rust-development
 [devs]: https://github.com/rust-lang/rust/graphs/contributors
 [internals.rust-lang.org]: https://internals.rust-lang.org/
