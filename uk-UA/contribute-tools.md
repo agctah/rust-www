@@ -1,35 +1,31 @@
 ---
-layout: default
-title: Contributing to Rust &mdash; tooling, IDEs and infrastructure &middot; The Rust Programming Language
+layout: uk-UA/default
+title: Сприяння Rust &mdash; інструменти, IDE та інфраструктура &middot; Мова програмування Rust
 ---
 
-# Contributing to Rust &mdash; tooling, IDEs and infrastructure
+# Сприяння Rust &mdash; інструменти, IDE та інфраструктура
 
-Tools play a huge part in the success of a language, and there is a
-great deal left to implement. ***A major focus of Rust development now
-is [improving the IDE experience][ides]***. This involves work
-throughout the Rust stack, from the compiler itself through your
-favorite IDE. Follow the link for more information.
+Інструменти відіграють значну роль для успіху мови і залишилось ще зробити велику справу.
+ ***Основна увага у розробці Rust насьогодні - це [покращення умов роботи в IDE][ides]***. 
+Це включає в себе роботу всього стеку Rust - від компілятора до вашої улюбленої IDE. 
+Прослідуйте за лінком для більш детальної інформації.
 
-Both Cargo, the Rust package manager, and rustdoc,
-the Rust documentation generator, while full-featured and functional,
-suffer from a lack of developers. Rustdoc has many open issues, under
-the main repository's [A-rustdoc] label. They are mostly bugs and
-contributing is a matter of fixing the bug and submitting a pull
-request. Cargo has [its own repository and issues][Cargo], and those
-interested in contributing might want to introduce themselves in
-[#cargo].
+Обоє - Cargo (пакетний менеджер Rust) та rustdoc (генератор документації Rust) -
+мають повний набір можливостей та повністю функціонують, однак страждають від браку розробників.
+Rustdoc має багато відкритих проблем в основному репозиторії із поміткою [A-rustdoc].
+Вони здебільшого є вадами і сприяння полягає у виправленні цих вад та надсиланні запитів на забирання
+змін. Cargo має [свій власний репозиторій та систему відслідковування помилок][Cargo], тому
+ті, хто зацікавлений у сприянні, можливо захочуть представитись у [#cargo].
 
-Although Rust can be run under both the gdb and lldb debuggers with
-limited success, there are still many cases where debugging does not
-work as expected.  The [A-debuginfo] issue tracks these.
+Хоча Rust може бути запущеною під обома зневаджувачами (gdb та lldb) із незначним успіхом,
+залишається багато випадків, коли зневадження не працює так, як очікується.
+Помилки [A-debuginfo] відслідковують ці речі.
 
-For ideas for more tooling projects to contribute to see
+З приводу ідей для більшого числа інструментів, яким можна посприяти, дивіться
 [awesome-rust].
 
-There are often other tooling projects of interest just waiting for
-the right people to come along and implement them. Discuss with other
-Rust tooling enthusiasts in [#rust-tools].
+Часто інші цікаві проекти інструментів очікують на своїх людей, які б
+втілили їх у життя. Обговоріть це із іншими ентузіастами Rust в [#rust-tools].
 
 [#cargo]: https://client00.chat.mibbit.com/?server=irc.mozilla.org&channel=%23rustc
 [#rust-tools]: https://client00.chat.mibbit.com/?server=irc.mozilla.org&channel=%23rust-tools
