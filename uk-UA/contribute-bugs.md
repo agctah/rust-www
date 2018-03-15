@@ -1,46 +1,47 @@
 ---
-layout: default
-title: Contributing to Rust &mdash; finding, triaging and fixing issues &middot; The Rust Programming Language
+layout: uk-UA/default
+title: Сприяння Rust &mdash; пошук, сортування та виправлення вад &middot; Мова програмування Rust
 ---
 
-# Contributing to Rust &mdash; finding, triaging and fixing issues
+# Сприяння Rust &mdash; пошук, сортування та виправлення вад
 
-The day-to-day maintenance of the project revolves around Rust's
-[issue tracker] and [pull requests][PR], and more help is always
-needed. The most basic way to get started contributing to Rust is to
-look for the [E-easy] or [E-mentor] labels. These are meant to be
-approachable for new Rust programmers.
+Постійна підтримка проекту обертається навколо 
+[системи відслідковування помилок][issue tracker] Rust 
+та [запитів на забирання змін][PR], однак завжди потрібно ще більше допомоги. 
+Найпростіший шлях почати сприяти Rust - це звернути увагу на помітки [E-easy]
+та [E-mentor]. В першу чергу вони передбачають доступність для нових
+Rust-програмістів.
 
-On `E-mentor` issues an experienced Rust developer has volunteered in
-the comments to mentor you through solving the issue and [submitting
-the fix via GitHub pull request][pull]. Contact them about the issue,
-on the issue tracker by [@mentioning] their name in a comment, on IRC,
-or through email. Note that Rust developers get a lot of notifications
-and it is easy to miss some; don't hesitate to hunt them down by
-whatever means necessary!
+При проблемах `E-mentor` досвідчений розробник Rust допомагає в коментарях
+щоб провести вас шляхом вирішення проблеми та 
+[надіслати запит на забирання змін до GitHub із виправленнями вади][pull]. 
+Зв'яжіться із ним щодо проблеми у системі відслідковування помилок,
+[згадавши][@mentioning] його ім'я в коментарі, в IRC,
+або через email. Зауважте, що розробники Rust отримують багато сповіщень
+і їм досить легко деякі із них упустити; не соромтесь полювати на них, чого б
+вам це не коштувало!
 
-Other projects in Rust maintain similar entry-level tasks, including
-the web browser [Servo], the HTTP library [hyper], the
-source-formatter [rustfmt], the Unix library bindings [nix],
-and the lint collection [clippy].
+Інші проекти у Rust підтримують подібні задачі початкового рівня, включаючи веб-браузер [Servo], 
+HTTP бібліотеку [hyper], форматтер початкового коду [rustfmt], бібліотечні прив'язки Unix  [nix]
+та колекцію підозрілих конструкцій коду [clippy].
 
-While Rust has an [extensive test suite][test] there is always more to
-test. The [E-needstest] label indicates issues that are thought to be
-fixed but don't have tests. Writing test cases is a great way to
-understand a new project and get started contributing.
+У той час як Rust має [обширний набір тестів][test] - завжди є, що потестувати. 
+Мітка [E-needstest] вказує на проблеми, які вважаються виправленими, але
+не мають тестів. Написання варіантів тестів - чудовий шлях зрозуміти новий проект
+і почати допомагати.
 
-Rust is always in need of people to [triage] issues: reproduce bugs,
-minimize test cases, apply labels, close resolved issues. Note that
-you'll need elevated GitHub permissions to apply labels, but this is
-easy to obtain for somebody with a bit of experience in the
-project. Ask a [team member][team].
+Rust завжди потребує людей, які [відсортують][triage] проблеми: відтворять ваду,
+мінімізують тестові варіанти, поставлять мітку, закриють вирішені проблеми. 
+Зауважте, що вам будуть потрібні підвищені права GitHub для проставляння міток,
+але їх легко отримати для будь-кого із невеликим досвідом на проекті. 
+Запитайте [представника команди][team].
 
-Once you've found your way around the project and have created a few
-pull requests in a particular area, consider reviewing others' pull
-requests: good reviewership is a rare skill and always appreciated. No
-prior permission is needed &mdash; just start constructively and politely
-commenting on pull requests that interest you. If you want training
-on conducting good code reviews [read this guide][reviews].
+Після того, як ви знайдете своє місце в проекті і створите декілька
+запитів на забирання змін в певній області, розгляньте можливість переглянути 
+запити на забирання змін інших учасників: бути хорошим рецензентом - рідкісна майстерність
+і завжди високо цінується. Не потрібно попередніх дозволів &mdash; просто почніть конструктивно
+та ввічливо коментувати запити на забирання змін, які вас цікавлять. Якщо ви хочете повчитись
+проведенню хороших переглядів коду &mdash; [почитайте ці поради][reviews].
 
 <!--
 TODO: weekly triage email?
