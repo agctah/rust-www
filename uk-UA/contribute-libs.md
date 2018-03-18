@@ -1,45 +1,41 @@
 ---
-layout: default
-title: Contributing to Rust &mdash; libraries &middot; The Rust Programming Language
+layout: uk-UA/default
+title: Сприяння Rust &mdash; бібліотеки &middot; Мова програмування Rust
 ---
 
-# Contributing to Rust &mdash; libraries
+# Сприяння Rust &mdash; бібліотеки
 
-If you want to contribute to Rust by writing volumes of Rust code,
-then libraries are where it's at: since Rust is a young language,
-there are many types of libraries that either do not exist yet
-or are incomplete and in need of improvement or competition.
+Якщо ви хочете посприяти Rust написанням тон коду Rust,
+тоді бібліотеки - це те, що вам потрібно: оскільки Rust - молода мова,
+існує багато типів бібліотек, які або ще не існують або не завершені
+і потребують покращення та завершення.
 
-Deciding what to write that will have impact and be fun is a common
-difficulty. Here are some ideas:
+Загальновідомою є проблема із визначенням того, що б написати, аби воно 
+було потрібне та принесло задоволення. Ось декілька ідей:
 
-* Read and participate in the weekly "what's everyone working on
-  this week" threads on [/r/rust] and [users.rust-lang.org]. These are
-  packed with exciting announcements from other Rust programmers in
-  need of collaborators.
-* Familiarize yourself with the best Rust libraries through
-  [awesome-rust] and [libs.rs].
-* Some larger projects, including the web browser [Servo], the HTTP
-  library [hyper], the source-formatter [rustfmt], the Unix library bindings
-  [nix], and the lint collection [clippy], tag issues with 'easy' labels for new
-  contributors.
-* Get involved with one of the active Rust-oriented GitHub
-  organizations, such as [PistonDevelopers], [servo], [redox-os],
-  [iron], [contain-rs], [hyperium]. It's often easier to find a place
-  to fit in with these subcommunities, they are in greater need of
-  help than rust-lang itself, and they are filled with experienced
-  Rust developers to guide you.
-* Help guide libraries from [rust-lang-nursery] into rust-lang proper.
-  Unfortunately there is not much documentation on what needs to be
-  done here; ask on [#rust-libs].
-* Inspect the RFC issue tracker for a [requested community
-  library][requested] and build it.
-* Watch [Github Trending][trending] for currently active Rust projects.
+* читайте та беріть участь у щотижневій темі "what's everyone working on
+  this week" на [/r/rust] і [users.rust-lang.org]. У них безліч захоплюючих
+  анонсів від інших розробників Rust, яким потрібна допомога.
+* Ознайомтесь із найкращими бібліотеками Rust за допомогою
+  [awesome-rust] та [libs.rs].
+* Декілька більших проектів, включаючи веб-браузер [Servo], HTTP
+  бібліотеку [hyper], форматтер початкового коду [rustfmt],
+  бібліотечні прив'язки Unix [nix] та колекцію підозрілих конструкцій коду
+  [clippy] - позначають проблеми міткою 'easy' для новачків.
+* Долучіться до однієї з активних Rust-орієнтованих GitHub
+  організацій, таких як [PistonDevelopers], [servo], [redox-os],
+  [iron], [contain-rs], [hyperium]. Часто простіше знайти собі місце
+  в цих спільнотах, їм значно необхідніша допомога ніж rust-lang і 
+  в них багато досвідчених розробників Rust, що допоможуть вам зорієнтуватись.
+* Допоможіть коректно провести бібліотеки із [rust-lang-nursery] в rust-lang.
+  На жаль, досить мало документації щодо того, що потрібно зробити; запитайте на [#rust-libs].
+* Вивчіть систему відслідковування помилок RFC на предмет [бібліотеки, що необхідна спільноті][requested]
+  і створіть її.
+* Спостерігайте за [тенденціями Github][trending] для активних Rust проектів.
 
-As a library author you will want to be aware of the [best practices
-for Rust libraries][lib-prac].
+Як автор бібліотеки, ви захочете бути в курсі [найкращих практик бібліотек Rust][lib-prac].
 
-Meet other Rust library designers in [#rust-libs].
+Знайомтесь із іншими дизайнерами бібліотек Rust у [#rust-libs].
 
 <!--
 TODO: Not sure #rust-libs is the place to direct people
