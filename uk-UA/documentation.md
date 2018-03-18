@@ -1,36 +1,33 @@
 ---
-layout: default
-title:  Rust Documentation &middot; The Rust Programming Language
+layout: uk-UA/default
+title:  Документація Rust &middot; Мова програмування Rust
 ---
 
-# Rust Documentation
+# Документація Rust
 
-If you haven't seen Rust at all yet, the first thing you should read
-is the introduction to the book, [The Rust Programming
-Language][book]. It will give you a good idea of what Rust is like,
-show you how to install it, and explain its syntax and concepts. Upon
-completing the book, you'll be an intermediate Rust developer, and
-will have a good grasp of the fundamental ideas behind Rust.
+Якщо ви ще взагалі не бачили Rust, тоді перша річ, яку ви повинні прочитати -
+вступ до книги [Мова програмування Rust][book]. Це дасть вам гарне уявлення про те, 
+що таке Rust, покаже, як її встановити, пояснить її синтаксис і поняття. 
+Після заверешння книги ви будете сернім розробником Rust і добре розумітимете
+фундаментальні ідеї в основі Rust.
 
-## Learning Rust
+## Вивчення Rust
 
-[The Rust Programming Language][book]. Also known as "The Book",
-The Rust Programming Language will introduce you to the main topics
-important to learning Rust, and get you to the point where you can
-be productive. The book is the primary official document of
-the language.
+[Мова програмування Rust][book], також відома як "Книга",
+познайомить вас із основними темами, яким важливо навчитись у Rust, 
+і проведе вас до точки, коли ваша робота із Rust станете продуктивною. 
+Книга є основним офіційним документом по мові Rust.
 
-[Rust by Example][rbe]. A collection of self-contained Rust
-examples on a variety of topics, executable in-browser.
+[Rust by Example][rbe]. Це колекція самодостатніх прикладів Rust
+на різноманітні теми, які виконуються у веб-браузері.
 
-[Frequently asked questions][faq].
+[Часті Питання][faq].
 
-[The Rustonomicon][nomicon]. An entire book dedicated to
-explaining how to write unsafe Rust code. It is for advanced Rust
-programmers.
+[Rustonomicon][nomicon]. Книга цілковито присвячена тому, аби пояснити
+як писати небезпечний (unsafe) код Rust. Вона призначена для просунутих
+розробників на Rust.
 
-[rust-learning]. A community-maintained collection of resources
-for learning Rust.
+[rust-learning]. Колекція ресурсів для навчання Rust, яка підтримується спільнотою.
 
 [book]: https://doc.rust-lang.org/book/
 [rbe]: http://rustbyexample.com
@@ -38,30 +35,27 @@ for learning Rust.
 [nomicon]: https://doc.rust-lang.org/nomicon/
 [rust-learning]: https://github.com/ctjhoa/rust-learning
 
-## References
+## Посилання
 
-[Standard Library API Reference][api]. Documentation for the
-standard library.
+[API стандратної бібліотеки][api]. Документація стандартної бібліотеки.
 
-[docs.rs]. Documentation for all crates published to [crates.io].
+[docs.rs]. Документація до всіх пакетів, опублікованих на [crates.io].
 
-[The Rust Reference][ref]. While Rust does not have a
-specification, the reference tries to describe its working in
-detail. It tends to be out of date.
+[Еталонне джерело][ref]. В той час як Rust не має специфікації, еталонне джерело
+намагається прояснити її роботу в деталях. З часом стає застарілим.
 
-[Syntax Index][syn]. This appendix from The Book contains examples
-of all syntax in Rust cross-referenced with the section of The Book
-that describes it.
+[Синтаксичний індекс][syn]. Цей додаток до Книги містить приклади
+всіх складових синтаксису Rust із посиланнями на розділ Книги, що їх описує.
 
-[The Cargo Guide][cargo]. The documentation for Cargo,
-Rust's package manager.
+[Керівництво Cargo][cargo]. Документація по Cargo, пакетному менеджеру
+Rust.
 
-[Compiler Error Index][err]. Extended explanations of
-the errors produced by the Rust compiler.
+[Індекс помилок компілятора][err]. Розширені пояснення помилок, що повертаються
+компілятором Rust.
 
-[Release Notes][release_notes]. A recording of changes made during each release.
+[Примітки до випусків][release_notes]. Записи всіх змін, внесених при випуску нових версій.
 
-[Platform Support][platform_support]. List of platforms in each support tier.
+[Підтримка платформ][platform_support]. Перелік платформ, які підтримуються на різних рівнях.
 
 [api]: https://doc.rust-lang.org/std/
 [syn]: https://doc.rust-lang.org/book/syntax-index.html
@@ -73,36 +67,33 @@ the errors produced by the Rust compiler.
 [crates.io]: https://crates.io
 [platform_support]: https://forge.rust-lang.org/platform-support.html
 
-## Project policies
+## Проектні політики
 
-[Rust security policy][security]. The project's policies for
-reporting, fixing and disclosing security-related bugs.
+[Політика безпеки Rust][security]. Проектні політики щодо
+повідомлення, виправлення та розголошення вад, пов'язаних із безпекою.
 
-[Rust copyright and trademark policies][legal]. The Rust
-copyrights are owned by The Rust Project Developers, and its
-trademarks are owned by Mozilla. Appropriate usage of Rust's
-trademarks are described here.
+[Правова політика Rust][legal]. Авторські права Rust
+належать розробникам проекту Rust, його товарні знаки належать Mozilla.
+Правильне використання товарних знаків Rust описані тут.
 
-[Code of Conduct][coc]. Applies to the rust-lang organization
-on GitHub, the official forums, IRC channels, and various
-other corners of the Rust world.
+[Кодекс поведінки][coc]. Застосовується в організації rust-lang
+на GitHub, офіційних форумах, IRC каналах і багатьох інших куточках світу Rust.
 
 [security]: security.html
 [legal]: legal.html
-[coc]: https://www.rust-lang.org/conduct.html
+[coc]: conduct.html
 
-## Nightly and beta documentation
+## Нічна та бета документація
 
-Much of the official Rust documentation is also available for the
-[nightly] and [beta] releases in addition to the stable documentation
-linked above.
+Значна частина офіційної документації Rust також доступна для
+[нічних][nightly] та [бета][beta] випусків на додаток до стабільних.
 
 [nightly]: https://doc.rust-lang.org/nightly/
 [beta]: https://doc.rust-lang.org/beta/
 
-## Non-english resources
+## Не англомовні ресурси
 
-For resources in languages other than English, see the
-[locale-specific links in rust-learning][locale].
+Для ресурсів мовами, відмінними від англійської, дивіться
+[посилання для різних мов у rust-learning][locale].
 
 [locale]: https://github.com/ctjhoa/rust-learning#locale-links
