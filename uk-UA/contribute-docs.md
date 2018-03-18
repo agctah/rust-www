@@ -1,49 +1,46 @@
 ---
-layout: default
-title: Contributing to Rust &mdash; documentation &middot; The Rust Programming Language
+layout: uk-UA/default
+title: Сприяння Rust &mdash; документація &middot; Мова програмування Rust
 ---
 
-# Contributing to Rust &mdash; documentation
+# Сприяння Rust &mdash; документація
 
-Documentation is never good enough and there's never enough of it.
-Many aspects of Rust's documentation don't require deep knowledge to
-improve, and writing, reviewing, and editing documentation are great
-ways to learn Rust. Furthermore, improvements to documentation are
-easy to identify and limitless. Don't like the way something reads?
-Discover some information that wasn't documented?  Your pull request
-will be gleefully embraced.
+Документація ніколи не буває достатньо хорошою і її ніколи не буває забагато.
+Багато аспектів документації Rust не вимагають глибоких знань для того, щоб
+покращити, написати, перевірити і відредагувати її, проте це є ефективним шляхом
+вивчення Rust. Крім того, місця покращення документації легко визначити і їм кінця-краю немає.
+Не подобається, як щось читається? Знайшли інформацію, яка не документована?
+З радістю приймемо ваші запити на забирання змін.
 
-***The most impactful documentation you can write is [for the crates
-that make up the Rust ecosystem][crate_docs]***. While the in-tree
-documentation is relatively complete, the same is not yet true for
-[many of the popular crates and tools][awesome-rust] that Rust
-programmers interact with every day. Contributing API documentation to
-a popular Rust project will earn you the enduring love of its maintainer.
+***Найбільш вагома документація, яку ви можете написати - [для пакетів, що формують
+екосистему Rust][crate_docs]***. В той час як основна документація відносно завершена,
+зовсім інша ситуація із [багатьма пакетами та інструментами][awesome-rust] із якими розробники Rust
+мають справу щодня. Написавши документацію до API популярного Rust-проекту,
+ви заслужите міцну любов її супроводжуючого.
 
-[The Book] is the primary documentation for Rust, maintained in the
-main repository. It has its own issue label, [A-book] and
-is continually being refined. Other documentation in the main
-repository include [The Rust Reference], the [standard library API
-documentation][std], [The Rustonomicon] (a guide to using `unsafe`
-correctly). The [Rust Style Guidelines] are so incomplete they are not
-linked prominently; an ambitious contributor can make much headway
-there. The [error index][err] provides extended explanations of the
-errors produced by the compiler. As new errors are added this
-documentation [must be maintained][err-issue], so there always are
-errors not reflected in the index to be added. Most in-tree
-documentation lives in the [src/doc] directory. These are all covered by
-the [A-docs] label on that issue tracker. Finally, this document
-and other website materials are maintained in the [Rust website Git repository].
-To contribute simply edit it and submit a pull request.
+[Книга][The Book] - основна документація по Rust, що супроводжується в
+головному репозиторії. Вона має власну мітку проблем, [A-book], і постійно
+вдосконалюється. Інша документація в головному репозиторії включає в себе
+[головне джерело довідкової інформації][The Rust Reference], [документацію API
+стандартної бібліотеки][std], [The Rustonomicon] (керівництво з правильного
+використання `unsafe`). [Рекомендації по стилю Rust][Rust Style Guidelines] 
+настільки неповні, що на них неможливо посилатись; співучасник із значними амбіціями
+може досягти в цьому питанню значних успіхів. [Індекс помилок][err] надає розширені пояснення
+щодо помилок, які видаються компілятором. При додаванні нових помилок дану
+документацію [слід оновити][err-issue], так що завжди є помилки, які
+не відображені в індексі і які потрібно додати. Більшість внутрішньої
+документації знаходиться в директорії [src/doc]. Всі вище наведені моменти
+позначені мітками [A-docs] в системі відслідковування помилок. Зрештою, цей документ
+та інші матеріали веб-сайту супроводжуються у [репозиторії веб-сайту Rust][Rust website Git repository].
+Щоб внести вклад &mdash; просто внесіть корективи і надішліть запит на забирання змін.
 
-A great deal of important Rust documentation does not live in the main
-repository, or is not maintained by the project, but is still
-critically important to Rust's success. Examples of excellent Rust
-documentation that is actively developed and in need of contributors
-include [Rust By Example], [Rust Design Patterns], and [rust-rosetta].
-For other existing documentation projects to contribute to see [rust-learning].
+Велика частина документації Rust не знаходиться в головному репозиторії
+або не супроводжується проектом, але при цьому вона все ж критично важлива
+для успіху Rust. Приклади зразкової документації Rust, що активно розробляється
+і потребує сприяння, включають в себе [Rust By Example], [Rust Design Patterns] і [rust-rosetta].
+Щоб ознайомитись із іншими проектами документації, яким можна посприяти, дивіться [rust-learning].
 
-Meet other Rust documentarians in [#rust-docs].
+Подивитись іншу документацію Rust можна в [#rust-docs].
 
 <!--
 TODO: blogging, translation
