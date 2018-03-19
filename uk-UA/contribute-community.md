@@ -1,15 +1,15 @@
 ---
-layout: default
-title: Contributing to Rust &mdash; community building &middot; The Rust Programming Language
+layout: uk-UA/default
+title: Сприяння Rust &mdash; побудова спільноти &middot; Мова програмування Rust
 ---
 
-# Contributing to Rust &mdash; community building
+# Сприяння Rust &mdash; побудова спільноти
 
-Help newbies, spread the word, meet interesting people. Make Rust the
-shining example of open source development that we all want it to be.
+Допомагати новачкам, поширювати слово, зустрічати цікавих людей. Зробити Rust
+блискучим прикладом відкритої розробки - це те, чого ми всі прагнемо.
 
-Keep an eye on the [#rust-beginners] channel. This is where we direct
-new Rust programmers to ask for help, and it is vital when they do
+Стежте за каналом [#rust-beginners]. Сюди ми відсилаємо нових розробників
+на Rust по допомогу і має велике значення те, щоб вони отримувалиand it is vital when they do
 that they receive prompt, accurate, and courteous responses. Likewise,
 [Stack Overflow], [users.rust-lang.org], and [/r/rust], are all forums
 where Rust programmers commonly look for assistance. If you want
