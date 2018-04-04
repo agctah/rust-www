@@ -1,76 +1,65 @@
 ---
-layout: default
-title: Contributing to Rust &mdash; language, compiler, and the standard library &middot; The Rust Programming Language
+layout: uk-UA/default
+title: Сприяння Rust &mdash; мова, компілятор та стандартна бібліотека &middot; Мова програмування Rust
 ---
 
-# Contributing to Rust &mdash; language, compiler, and the standard library
+# Сприяння Rust &mdash; мова, компілятор та стандартна бібліотека
 
 
-The source code to the compiler and standard library are in the main
-repository, and as their maintenance is the primary objective of that
-repository, many labels on the issue tracker relate to it. Some of
-the more fruitful labels include [A-codegen], for translation of
-Rust to LLVM IR; [A-debuginfo], generation of metadata used by debuggers;
-[A-diagnostics], the feedback the compiler provides on errors; [A-libs],
-issues with the standard library; [A-macros] and [A-syntaxext], both
-related to syntax extensions; and [A-typesystem], on the topic of types.
+Сирцевий код компілятора та стандартної бібліотеки знаходяться у
+головному репозиторії і тому їх обслуговування та підтримка є основною метою
+даного репозиторію, багато міток в системі відслідковування помилок пов'язані із ними. 
+Деякі із міток, які часто зустрічаються, включають в себе [A-codegen] - для трансляції
+Rust до LLVM IR; [A-debuginfo] - генерація метаданих, що використовуються зневаджувачем;
+[A-diagnostics] - для зворотнього зв'язку, що компілятор надає при помилках; [A-libs] -
+проблеми із стандартною бібліотекою; [A-macros] та [A-syntaxext]- обоє пов'язані із синтаксичними
+розширеннями, а також [A-typesystem] - стосовно теми типів.
 
-There is no well-maintained guide to the architecture of the compiler,
-but [there is a small overview in-tree][rustc-guide]. The [API
-documentation for the crates that make up the
-compiler][internals-docs] can help with navigating the code, as can
-the source code browser [Rust DXR]. The [guide to the Rust test
-suite][testsuite] will teach you how to exercise the Rust build system
-effectively, as will running [`make tips`][tips] at the command line.
+Немає належного керівництва по архітектурі компілятора,
+але [є невеличкий внутрішній огляд][rustc-guide]. [Документація API
+для пакетів, які формують компілятор][internals-docs] може допомогти із навігацією по коду, 
+так само як браузер коду [Rust DXR]. [Керівництво по набору тестів Rust][testsuite] 
+навчить вас як ефективно користуватись системою побудови Rust,
+наподобі того, як запустити [`make tips`][tips] в командному рядку.
 
-For the foreseable future, one of the major thrusts of Rust compiler
-development is converting its internals from operating directly off
-the AST to working with an [intermediate representation called
-MIR][mir]. This work is expected to open up many new possibilities by
-simplifying the compiler and help is needed to e.g. create a MIR-based
-translation pass, add MIR-based optimizations, and implement
-incremental compilation. There is yet no single source for information
-on work needed here, but ask on [internals.rust-lang.org] or
-[#rust-internals] for guidance.
+На найближче майбутнє однією із найважливіших задач розробки компілятора Rust є перехід
+його внутрішньої логіки від оперування безпосередньо AST до роботи із [проміжним представленням, знаним як MIR][mir]. 
+Очікується, що ця робота відкриє багато нових можливостей завдяки спрощенню
+компілятора і допоможе, для прикладу, створити, базований на MIR, етап трансляції,
+додати, базовані на MIR, оптимізації і реалізувати
+інкрементальну компіляцію. Ще немає єдиного джерела інформації по роботі, яку стосовно цього
+слід виконати, однак скерувати вас в правильному напрямку зможуть на [internals.rust-lang.org] або
+[#rust-internals].
 
-[It's embarrasing when our compiler crashes][ice] &mdash; the
-dreaded 'internal compiler error' (ICE). The [I-ICE] label
-tracks these, and they are often plentiful. These are usually
-good bugs to start with because it's easy to know when you've fixed
-them, and they're often relatively self-contained.
+[Дуже неприємно, коли компілятор виходить з ладу][ice] &mdash; страшна 'internal compiler error' (ICE). Мітка [I-ICE]
+слідкує за подібними речами і їх часто є досить багато. Подібні речі часто є
+хорошими помилками, щоб почати із них, тому що легко визначити, коли ви їх виправили
+і вони часто є відносно самодостатніми.
 
-The performance of Rust code is one of its great advantages; and the
-performance of the Rust compiler one of its great weaknesses. Any
-improvements to either runtime or &mdash; especially &mdash; compiletime performance
-are widely celebrated. The [I-slow] and [A-optimization] labels deal
-with runtime performance, and [I-compiletime] with compiletime. We have
-a [site that tracks compiletime performance][rustc-perf] on a number
-of workloads. The `-Z time-passes` compiler flag can help debug
-compiler performance, and Rust code can be profiled with standard
-profilers like `perf` on Linux.
+Продуктивність коду Rust є однією з його великих переваг, з іншого боку - продуктивність
+компілятора Rust є однією з його великих слабкостей. Будь-які поліпшення в середовищі виконання
+або &mdash; особливо &mdash; часу компіляції - широко вітаються. 
+Мітки [I-slow] та [A-optimization] стосуються продуктивності середовища виконання, а [I-compiletime] - часу компіляції.
+У нас є [сайт, який відстежує продуктивність часу компіляції][rustc-perf] на множині робочих навантажень.
+Прапорець компілятора `-Z time-passes` може допомогти відслідкувати продуктивність компілятора,
+і код Rust можна відпрофілювати зі стандартним профайлером, як то `perf` на Linux.
 
-Major new features go through a [Request for Comments (RFC)][rfc]
-process, by which the design is agreed upon. Though it is open to all,
-it is a social process between developers who already have various
-amounts of experience working together, and it is recommended to get
-involved slowly &mdash; submitting a hasty RFC without understanding
-the historical, technical, or social context is an easy way
-to make a poor impression and come away disappointed. Read the
-aforelinked readme file to understand best how it all works. Many
-ideas have been debated in Rust's history, some rejected, some
-postponed until the future, and the RFC [issue tracker][rfc-issues]
-catalogs some wishlist ideas that have yet to make headway into the
-language. Shortly before an RFC is accepted for implementation it
-enters 'final comment period', indicated by the [final-comment-period
-label on the rust-lang/rfcs repository][rfc-fcp]. Likewise, before a
-feature is enabled in the stable compiler (called 'ungating') it
-enters [final-comment-period in the rust-lang/rust
-repository][issue-fcp]. Both FCPs are critical moments to get involved
-and express opinions on the direction of the language, and are
-advertised in the weekly subteam reports on [internals.rust-lang.org].
+Значні нові функції проходять через процес [заявок на обговорення (RFC)][rfc],
+за яким узгоджується їх дизайн. Хоча цей процес відкритий для всіх, однак
+це соціальна співпраця між розробниками, які часто мають різний досвід співпраці, тому
+пропонуємо долучатись повільно &mdash; подання поспішної RFC без розуміння історичного, технічного
+чи соціального контексту - простий шлях сформувати погане враження і піти розчарованим.
+Читайте прикріплений readme файл, щоб краще зрозуміти як це все працює. Багато ідей було обговорено
+за історію Rust, деякі відкинуто, деякі відкладено на майбутнє, а [система відслідковування помилок][rfc-issues] RFC
+каталогізує деякі бажані ідеї які ще мають потрапити в мову. Незадовго до прийняття RFC в реалізацію вона потрапляє у
+'період фінальних коментарів', що позначається [міткою final-comment-period
+у rust-lang/rfcs репозиторії][rfc-fcp]. Аналогічно, перед тим, як функцію буде активовано
+в стабільному компіляторі (називається 'відправка') вона переходить у [final-comment-period у rust-lang/rust
+репозиторії][issue-fcp]. Обидва FCP є критичними моментами, щоб долучитись до участі
+і висловити свою думку щодо напрямку розвитку мови, про що повідомляється у щотижневих
+звітах підкоманд [internals.rust-lang.org].
 
-Meet other Rust compiler engineers in [#rustc], language
-designers in [#rust-lang], and library designers in [#rust-libs].
+Зустрічайтесь із іншими розробниками компілятора Rust у [#rustc], архітекторами мови - у [#rust-lang] і архітекторами бібліотеки - у [#rust-libs].
 
 <!--
 TODO: guide to compile-time benchmarking
