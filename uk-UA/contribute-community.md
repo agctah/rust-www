@@ -5,58 +5,47 @@ title: Сприяння Rust &mdash; побудова спільноти &middot
 
 # Сприяння Rust &mdash; побудова спільноти
 
-Допомагати новачкам, поширювати слово, зустрічати цікавих людей. Зробити Rust
+Допомагати новачкам, поширювати інформацію, зустрічати цікавих людей. Зробити Rust
 блискучим прикладом відкритої розробки - це те, чого ми всі прагнемо.
 
 Стежте за каналом [#rust-beginners]. Сюди ми відсилаємо нових розробників
-на Rust по допомогу і має велике значення те, щоб вони отримувалиand it is vital when they do
-that they receive prompt, accurate, and courteous responses. Likewise,
-[Stack Overflow], [users.rust-lang.org], and [/r/rust], are all forums
-where Rust programmers commonly look for assistance. If you want
-training on answering programmers' questions [read this
-guide][helpful].
+на Rust по допомогу і дуже важливо, щоб вони отримували швидкі, влучні та ввічливі відповіді. Аналогічно
+[Stack Overflow], [users.rust-lang.org] та [/r/rust] - це ті форуми, де програмісти
+Rust зазвичай шукають допомогу. Якщо ви бажаєте повчитись давати відповіді на запитання програмістів -
+[почитайте це керівництво][helpful].
 
-If you are already experienced in some area of the project, please
-look out for potential [E-easy] bugs. When you see an
-easy issue on the bug tracker that you know how to fix, write up a
-description of the fix and tag it with E-easy. Note that what is
-obvious to you is not obvious to a new Rust contributor, and its
-important to describe the problem and the solution clearly. It is
-thus also helpful to triage E-easy bugs for poor descrptions and
-improve them.
+Якщо у вас вже є досвід у певній області проекту, будь ласка, гляньте в біг [E-easy] помилок. Коли ви побачите
+просту задачу у системі відслідковування помилок, яку ви знаєте, як вирішити - опишіть шлях її
+вирішення і залиште позначку E-easy. Зауважте, що те, що є очевидним для вас, не є очевидним
+для новачка Rust і саме тому важливо чітко описати проблему та шляхи її вирішення. До того ж,
+корисним буде проінспектувати E-easy помилки на наявність поганих описів та покращити їх.
 
-Experienced developers who are patient and communicate clearly should
-consider [mentoring new contributors][mentor]. Tag easy issues with
-[E-mentor] and mention in a comment that you will mentor. Expect people
-to contact you about the issue, and attempt to respond promptly.
+Досвідчені розробники, що є терплячими та гарними співрозмовниками, мають
+розглянути [наставництво нових учасників][mentor]. Позначте легку задачу міткою
+[E-mentor] та вкажіть у коментарях, що ви будете наставником. Після чого очікуйте, що люди
+зв'яжуться з вами стосовно задачі і спробуйте швидко відгукнутись.
 
-Maintaining entry-level tasks is good not only for The Rust Project
-itself but all projects. If your project has a consistent supply of
-entry-level tasks you might institute such a program
-yourself. ***Curating entry-level tasks is one of the most effective
-methods of bringing new programmers into the project***. If you want
-training on mentoring new contributors [read this
-guide][mentor-guide].
+Супроводження задач початкового рівня - це добре не лише для проекту Rust, але й для інших проектів.
+Якщо на вашому проекті чітко налагоджено формування задач початкового рівня - ви можете вести
+таку програму самотужки. ***Підтимання задач початкового рівня - один із найефективніших методів
+залучення нових програмістів у проект***. Якщо ви бажаєте навчитись наставництву нових учасників -
+[почитайте це керівництво][mentor-guide].
 
-Talk about what you are working on in the weekly "what's everyone
-working on this week" threads on [/r/rust] and [users.rust-lang.org],
-and indicate what you need help with. These are great starting points
-for collaboration.
+Розказати про те, над чим ви зараз працюєте, можна у щотижневій темі "what's everyone
+working on this week" на [/r/rust] та [users.rust-lang.org] і вкажіть
+чим вам можна допомогти. Це чудова відправна точка для співпраці.
 
-Advocate Rust in your own local community. Rust [user groups] and [events]
-are a unique and exciting part of the Rust experience: there are so
-many, and they are everywhere! If you haven't been yet, go and enjoy
-new experiences. If there is nothing Rusty going on near you then
-consider organizing something. You can poll for interest and announce
-events on [/r/rust] or [users.rust-lang.org]. Contact the [community
-team] to put events on the calendar, and thus be announced on [This
-Week in Rust].
+Пропагандуйте Rust у вашій локальній спільноті. [Групи користувачів][user groups] Rust та [події][events]
+є унікальною та захоплюючою частиною світу Rust: їх так багато і вони - скрізь! 
+Якщо ви ще не були там - долучайтесь та отримуйте нові враження. 
+Якщо ж нічого Rust-ового біля вас не відбувається - організуйте що-небудь.
+Ви можете запитати чи когось це цікавить та оголосити про подію на [/r/rust] або [users.rust-lang.org].
+Зв'яжіться із [командою спільноти][community team] аби додати подію в календар і таким чином про це буде оголошено на
+[This Week in Rust].
 
-Remember as you are advocating Rust though to be considerate of
-others' views &mdash; not everybody is going to be receptive to Rust, and
-that's just fine.
+Пам'ятайте, ваша пропаганда Rust має брати до уваги погляди інших &mdash; не усі мають сприймати Rust і це - нормально.
 
-Meet other Rust community builders in [#rust-community].
+Зустрітись із іншими будівельниками спільноти Rust можна у [#rust-community].
 
 <!--
 Other ideas:
