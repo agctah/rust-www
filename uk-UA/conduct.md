@@ -76,6 +76,6 @@ GitHub ропозиторії на rust-lang, rust-lang-nursery та rust-lang-d
 розгляньте явне згадування вашої політики модерації або зробіть копію із вашими політиками модерації задля
 уникнення плутанини.
 
-*Адаптовано із [Node.js Policy on Trolling](http://blog.izs.me/post/30036893703/policy-on-trolling) as well as the [Contributor Covenant v1.3.0](https://www.contributor-covenant.org/version/1/3/0/).*
+*Адаптовано із [Node.js Policy on Trolling](http://blog.izs.me/post/30036893703/policy-on-trolling), а також [Contributor Covenant v1.3.0](https://www.contributor-covenant.org/version/1/3/0/).*
 
 [mod_team]: /team.html#Moderation-team
