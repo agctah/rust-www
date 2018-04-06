@@ -26,7 +26,7 @@ title: Кодекс поведінки Rust &middot; Мова програмув
   Зокрема, ми не сприймаємо поведінку, яка виключає людей у соціально маргінальні групи.
 * Приватні домагання також неприйнятні. Незалежно від того, хто ви є, якщо вам здалось, що вас
   переслідують або ставили в незручне становище члени спільноти, будь ласка, зверніться до одного
-  із адміністраторів теми або до будь-кого із [команди модераторів Rust][mod_team] негайно. Незалежно
+  із адміністраторів каналу або до будь-кого із [команди модераторів Rust][mod_team] негайно. Незалежно
   від того, постійно ви допомагаєте проекту, чи ви - новачок, ми дбаємо про те, щоб спільнота була
   безпечною для вас, а ми зі свого боку - прикриємо ваш тил.
 * Так само спам, троллінг, цькування чи інша поведінка, що привертає забагато уваги - не вітається.
@@ -35,48 +35,46 @@ title: Кодекс поведінки Rust &middot; Мова програмув
 
 
 Нижче наведено правила підтримки стандартів поведінки спільноти.
-Якщо ви вважаєте, що тема потребує модерації, будь ласка, зверніться [команди модераторів Rust][mod_team].
+Якщо ви вважаєте, що тема потребує модерації, будь ласка, зверніться до [команди модераторів Rust][mod_team].
 
-1. Remarks that violate the Rust standards of conduct, including hateful, hurtful, oppressive,
-   or exclusionary remarks, are not allowed. (Cursing is allowed, but never targeting another 
-   user, and never in a hateful manner.)
-2. Remarks that moderators find inappropriate, whether listed in the code of conduct or not,
-   are also not allowed.
-3. Moderators will first respond to such remarks with a warning.
-4. If the warning is unheeded, the user will be "kicked," i.e., kicked out of the communication 
-   channel to cool off.
-5. If the user comes back and continues to make trouble, they will be banned, i.e., indefinitely 
-   excluded.
-6. Moderators may choose at their discretion to un-ban the user if it was a first offense and 
-   they offer the offended party a genuine apology.
-7. If a moderator bans someone and you think it was unjustified, please take it up with that 
-   moderator, or with a different moderator, **in private**. Complaints about bans in-channel 
-   are not allowed.
-8. Moderators are held to a higher standard than other community members. If a moderator creates 
-   an inappropriate situation, they should expect less leeway than others.
+1. Зауваження, які порушують кодекс поведінки Rust, включаючи ненависну, шкідливу, жорстоку поведінку,
+   або виключні зауваження - заборонені. (Прокляття - дозволені, якщо вони не націлені на іншого користувача,
+   і не у ненависній формі.)
+2. Зауваження, які модератори знайшли недоцільними, незалежно від того наведені вони у кодексі поведінки або ні,
+   також є забороненими.
+3. Модератори спершу реагують на такі зауваження попередженням.
+4. Якщо попередження проігноровано - користувача буде "викинуто" - виключено із каналу
+   аби той охолов.
+5. Якщо користувач повертається і продовжує спричиняти проблеми, його буде забанено, 
+   тобто виключено на невизначений термін.
+6. Модератори можуть на свій розсуд розбанити користувача, якщо це було вперше і можуть запропонувати
+   попросити вибачення у ображеної сторони.
+7. Якщо модератор забанив когось і, на вашу думку, це невиправдано, будь ласка, поговоріть про це із даним модератором,
+   або іншим модератором **приватно**. Скарги на бан у каналі не дозволяються.
+8. Модератори дотримуються більш високих стандартів, ніж інші учасники спільноти. Якщо модератор створив неприйнятну
+   ситуацію - його очікують більші обмеження в свободі, ніж інших.
 
-In the Rust community we strive to go the extra step to look out for each other. 
-Don't just aim to be technically unimpeachable, try to be your best self. In particular, 
-avoid flirting with offensive or sensitive issues, particularly if they're off-topic; 
-this all too often leads to unnecessary fights, hurt feelings, and damaged trust; worse, 
-it can drive people away from the community entirely.
+У спільноті Rust ми намагаємось робити додаткові кроки аби підтримати один одного. 
+Не лише намагайтесь бути технічно бездоганним, намагайтесь залишатись самим собою. Зокрема, 
+не вдавайтесь до обговорення образливих чи делікатних питань, особливо якщо вони не стосуються теми; 
+це надто часто призводить до непотрібних сутичок, вражаються почуття, руйнується довіра; ба гірше - це
+може спричинити покидання людьми спільноти.
 
-And if someone takes issue with something you said or did, resist the urge to be defensive. 
-Just stop doing what it was they complained about and apologize. Even if you feel you were 
-misinterpreted or unfairly accused, chances are good there was something you could've 
-communicated better — remember that it's your responsibility to make your fellow 
-Rustaceans comfortable. Everyone wants to get along and we are all here first and 
-foremost because we want to talk about cool technology. You will find that people will be 
-eager to assume good intent and forgive as long as you earn their trust.
+І якщо у когось виникають проблеми із тим, що ви сказали або зробили, утримайтесь від бажання переходити
+в оборону. Просто припиніть робити те,  на що вони скаржаться та попросіть вибачення. Навіть якщо ви відчуваєте, що
+вас неправильно зрозуміли або несправедливо звинувачують - є шанс поспілкуватись краще. — 
+пам'ятайте, що ви відповідальні за комфорт ваших друзів Растеціанців. 
+Усі ми прагнемо спілкування і всі ми тут, перш за все, задля того аби поговорити про круту технологію.
+Ви побачите, що люди мають добрі наміри і віритимуть вам, як тільки ви заслужите їх довіру.
 
-The enforcement policies listed above apply to all official Rust venues; including official 
-IRC channels (#rust, #rust-internals, #rust-tools, #rust-libs, #rustc, #rust-beginners, #rust-docs, #rust-community, #rust-lang, and #cargo); 
-GitHub repositories under rust-lang, rust-lang-nursery, and rust-lang-deprecated; 
-and all forums under rust-lang.org (users.rust-lang.org, internals.rust-lang.org). 
-For other projects adopting the Rust Code of Conduct, please contact the maintainers 
-of those projects for enforcement. If you wish to use this code of conduct for your own 
-project, consider explicitly mentioning your moderation policy or making a copy with your 
-own moderation policy so as to avoid confusion.
+Усі вищенаведені засоби впливу застосовуються до всіх офіційних місць Rust; 
+включаючи офіційні IRC-канали (#rust, #rust-internals, #rust-tools, #rust-libs, #rustc, #rust-beginners, #rust-docs, #rust-community, #rust-lang, та #cargo); 
+GitHub ропозиторії на rust-lang, rust-lang-nursery та rust-lang-deprecated; 
+і також усі форуми на rust-lang.org (users.rust-lang.org, internals.rust-lang.org). 
+Для інших проектів, що приймають кодекс поведінки Rust, будь ласка, зв'яжіться із супроводжуючими
+цих проектів стосовно його дотримання. Якщо ви бажаєте використовувати цей кодекс поведінки у вашому проекті -
+розгляньте явне згадування вашої політики модерації або зробіть копію із вашими політиками модерації задля
+уникнення плутанини.
 
 *Адаптовано із [Node.js Policy on Trolling](http://blog.izs.me/post/30036893703/policy-on-trolling) as well as the [Contributor Covenant v1.3.0](https://www.contributor-covenant.org/version/1/3/0/).*
 
