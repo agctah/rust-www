@@ -49,56 +49,56 @@ title: Часті Питання &middot; Мова програмування Ru
 <h2 id="project">Проект Rust</h2>
 
 <h3><a href="#what-is-this-projects-goal" name="what-is-this-projects-goal">
-What is this project's goal?
+Яка мета даного проекту?
 </a></h3>
 
-To design and implement a safe, concurrent, practical systems language.
+Спроектувати та імплементувати безпечну, рівночасну, практичну системну мову.
 
-Rust exists because other languages at this level of abstraction and efficiency are unsatisfactory. In particular:
+Rust існує тому, що інші мови на цьому рівні абстракції та ефективності є незадовільними. Зокрема:
 
-1. There is too little attention paid to safety.
-2. They have poor concurrency support.
-3. There is a lack of practical affordances.
-4. They offer limited control over resources.
+1. Замало уваги приділяється безпеці.
+2. Вони мають слабку підтримку рівночасності.
+3. Їм бракує практичної доступності.
+4. Вони пропонують обмежений контроль ресурсів.
 
-Rust exists as an alternative that provides both efficient code and a comfortable level of abstraction, while improving on all four of these points.
+Rust є альтернативою, яка пропонує ефективний код та комфортний рівень абстракції, при покращенні всіх чотирьох вищенаведених моментів.
 
 <h3><a href="#is-this-project-controlled-by-mozilla" name="is-this-project-controlled-by-mozilla">
-Is this project controlled by Mozilla?
+Чи даний проект контролюється Mozilla?
 </a></h3>
 
-No. Rust started as Graydon Hoare's part-time side project in 2006 and remained so for over 3 years. Mozilla got involved in 2009 once the language was mature enough to run basic tests and demonstrate its core concepts. Though it remains sponsored by Mozilla, Rust is developed by a diverse community of enthusiasts from many different places around the world. The [Rust Team](https://www.rust-lang.org/team.html) is composed of both Mozilla and non-Mozilla members, and `rust` on GitHub has had over [1,900 unique contributors](https://github.com/rust-lang/rust/) so far.
+Ні. Rust розпочався як сторонній проект Грейдона Гоара (Graydon Hoare) із частковою зайнятістю у 2006 і залишався таким більше 3 років. Mozilla долучилась у 2009, як тільки мова стала достатньо зрілою для того, аби виконати базові тести та продемонструвати ключові концепції. Незважаючи на те, що Mozilla є спонсором, Rust розробляється спільнотою ентузіастів з багатьох різних місць по всьому світі. [Команда Rust](https://www.rust-lang.org/team.html) складається як із представників Mozilla так і не-Mozilla, до того ж `rust` насьогодні нараховує більше [1,900 унікальних авторів](https://github.com/rust-lang/rust/) на GitHub.
 
-As far as [project governance](https://github.com/rust-lang/rfcs/blob/master/text/1068-rust-governance.md) goes, Rust is managed by a core team that sets the vision and priorities for the project,
-guiding it from a global perspective. There are also subteams to guide and foster development of particular areas of interest, including the core language, the compiler, Rust libraries, Rust tools, and moderation of the official Rust communities. Designs in each of these areas are advanced through an [RFC process](https://github.com/rust-lang/rfcs). For changes which do not require an RFC, decisions are made through pull requests on the [`rustc` repository](https://github.com/rust-lang/rust).
+Що стосується [управління проектом](https://github.com/rust-lang/rfcs/blob/master/text/1068-rust-governance.md) - Rust керується основною командою, яка визначає бачення та пріоритети на проекті,
+спрямовуючи в глобальній перспективі. Також є підкоманди, спрямовані на розвиток та розробку конкретних областей, включаючи ядро мови, компілятор, бібліотеки Rust, інструменти Rust, модерацію офіційних спільнот Rust. Дизайн у кожній із цих областей проходить через [процедуру RFC](https://github.com/rust-lang/rfcs). Для змін, які не вимагають RFC, рішення приймаються через запити на забирання змін [репозиторію `rustc`](https://github.com/rust-lang/rust).
 
 <h3><a href="#what-are-some-non-goals" name="what-are-some-non-goals">
-What are some non-goals of Rust?
+Які цілі Rust перед собою не ставить?
 </a></h3>
 
-1. We do not employ any particularly cutting-edge technologies. Old, established techniques are better.
-2. We do not prize expressiveness, minimalism or elegance above other goals. These are desirable but subordinate goals.
-3. We do not intend to cover the complete feature-set of C++, or any other language. Rust should provide majority-case features.
-4. We do not intend to be 100% static, 100% safe, 100% reflective, or too dogmatic in any other sense. Trade-offs exist.
-5. We do not demand that Rust run on "every possible platform". It must eventually work without unnecessary compromises on widely-used hardware and software platforms.
+1. Ми не використовуємо найсучасніші технології. Старі, перевірені технології - краще.
+2. Ми не позиціонуємо експресивність, мінімалізм чи елегантність вище інших цілей. Це бажані, проте другорядні цілі.
+3. Ми не прагнемо охопити повний набір функцій C++ чи будь-якої іншої мови. Rust має забезпечувати функціональність для більшості випадків.
+4. Ми не прагнемо бути на 100% статичними, на 100% безпечними, на 100% рефлексивними або надто догматичними в будь-якому іншому сенсі. Має бути баланс.
+5. Ми не прагнемо аби Rust виконувалась на "будь-якій можливій платформі". Вона має, зрештою, працювати без зайвих компромісів на широко розповсюджених апаратних та програмних платформах.
 
 <h3><a href="#how-does-mozilla-use-rust" name="how-does-mozilla-use-rust">
-In which projects is Mozilla using Rust?
+На яких проектах Mozilla використовує Rust?
 </a></h3>
 
-The main project is [Servo](https://github.com/servo/servo), an experimental browser engine Mozilla is working on. They are also working to [integrate Rust components](https://bugzilla.mozilla.org/show_bug.cgi?id=1135640) into Firefox.
+Основним проектом є [Servo](https://github.com/servo/servo) - експериментальний браузерний рушій, над яким працює Mozilla. Вони також працюють над [інтеграцією компонентів Rust](https://bugzilla.mozilla.org/show_bug.cgi?id=1135640) у Firefox.
 
 <h3><a href="#what-examples-are-there-of-large-rust-projects" name="what-examples-are-there-of-large-rust-projects">
-What examples are there of large Rust projects?
+Які розробки можуть бути прикладом великих Rust-проектів?
 </a></h3>
-
-The two biggest open source Rust projects right now are [Servo](https://github.com/servo/servo) and the [Rust compiler](https://github.com/rust-lang/rust) itself.
+ 
+На сьогоднішній день два найбільших Rust-проекти - це [Servo](https://github.com/servo/servo) та, власне, [компілятор Rust](https://github.com/rust-lang/rust).
 
 <h3><a href="#who-else-is-using-rust" name="who-else-is-using-rust">
-Who else is using Rust?
+Хто ще користується Rust?
 </a></h3>
 
-[A growing number of organizations!](friends.html)
+[Кількість організацій продовжує збільшуватись!](friends.html)
 
 <!--
 ### What projects are good examples of idiomatic Rust code?
@@ -107,63 +107,63 @@ TODO: Write this answer.
 -->
 
 <h3><a href="#how-can-i-try-rust-easily" name="how-can-i-try-rust-easily">
-How can I try Rust easily?
+Який найлегший спосіб спробувати Rust?
 </a></h3>
 
-The easiest way to try Rust is through the [playpen](https://play.rust-lang.org/), an online app for writing and running Rust code. If you want to try Rust on your system, [install it](https://www.rust-lang.org/install.html) and go through the [Guessing Game](https://doc.rust-lang.org/stable/book/second-edition/ch02-00-guessing-game-tutorial.html) tutorial in the book.
+Найлегший спосіб спробувати Rust - через [playpen](https://play.rust-lang.org/) - онлайн програма для написання та виконання коду Rust. Якщо ви бажаєте спробувати Rust на вашій системі - [встановіть її](install.html) та ознайомтесь із навчальним посібником [Guessing Game](https://doc.rust-lang.org/stable/book/second-edition/ch02-00-guessing-game-tutorial.html) у книзі.
 
 <h3><a href="#how-do-i-get-help-with-rust-issues" name="how-do-i-get-help-with-rust-issues">
-How do I get help with Rust issues?
+Як отримати допомогу при проблемах із Rust?
 </a></h3>
 
-There are several ways. You can:
+Є декілька шляхів. Ви можете:
 
-- Post in [users.rust-lang.org](https://users.rust-lang.org/), the official Rust users forum
-- Ask in the official [Rust IRC channel](https://chat.mibbit.com/?server=irc.mozilla.org&channel=%23rust) (#rust on irc.mozilla.org)
-- Ask on [Stack Overflow](https://stackoverflow.com/questions/tagged/rust) with the "rust" tag
-- Post in [/r/rust](https://www.reddit.com/r/rust), the unofficial Rust subreddit
+- Опублікувати на [users.rust-lang.org](https://users.rust-lang.org/) - офіційному форумі користувачів Rust
+- Запитати в офіційному [Rust IRC каналі](https://chat.mibbit.com/?server=irc.mozilla.org&channel=%23rust) (#rust на irc.mozilla.org)
+- Запитати на [Stack Overflow](https://stackoverflow.com/questions/tagged/rust) із поміткою "rust"
+- Опублікувати на [/r/rust](https://www.reddit.com/r/rust) - неофіційному сабреддіті Rust
 
 <h3><a href="#why-has-rust-changed-so-much" name="why-has-rust-changed-so-much">
-Why has Rust changed so much over time?
+Чому Rust так сильно змінилась з часом?
 </a></h3>
 
-Rust started with a goal of creating a safe but usable systems programming language. In pursuit of this goal it explored a lot of ideas, some of which it kept (lifetimes, traits) while others were discarded (the typestate system, green threading). Also, in the run up to 1.0 a lot of the standard library was rewritten as early designs were updated to best use Rust's features and provide quality, consistent cross-platform APIs. Now that Rust has reached 1.0, the language is guaranteed to be "stable"; and while it may continue to evolve, code which works on current Rust should continue to work on future releases.
+Метою появи Rust було створення безпечної та зручної у використанні системної мови програмування. Прагнучи досягти поставленої мети, було досліджено багато ідей, деякі з яких було збережено (час життя, риси), а деякі - було відкинуто (система типів, зелені ниті). Також із наближенням до 1.0 значна частина стандартної бібліотеки була переписана, так як ранній дизайн було оновлено, аби краще використовувати функції Rust і забезпечити якісні, цілісні, крос-платформові API. Сьогодні Rust вже досягнула 1.0, мова гарантує свою "стабільність"; і хоча вона може продовжувати розвиватись, код, що працює на поточній Rust, повинен продовжувати працювати в наступних версіях.
 
 <h3><a href="#how-does-rust-language-versioning-work" name="how-does-rust-language-versioning-work">
-How does Rust language versioning work?
+Яким чином працює версіонування мови Rust?
 </a></h3>
 
-Rust's language versioning follows [SemVer](http://semver.org/), with backwards incompatible changes of stable APIs only allowed in minor versions if those changes fix compiler bugs, patch safety holes, or change dispatch or type inference to require additional annotation. More detailed guidelines for minor version changes are available as approved RFCs for both the [language](https://github.com/rust-lang/rfcs/blob/master/text/1122-language-semver.md) and [standard library](https://github.com/rust-lang/rfcs/blob/master/text/1105-api-evolution.md).
+Версіонування мови Rust здійснюється відповідно до [SemVer](http://semver.org/) із зворотньо несумісними змінами стабільних API, дозволеними лише в мінорних версіях, якщо ці зміни виправляють помилки компілятора, закривають вади безпеки або змінюють диспетчеризацію чи виведення типів, які вимагають додаткових анотацій. Більш детальні інструкції щодо змін мінорних версій доступні (як схвалені RFC) для [мови](https://github.com/rust-lang/rfcs/blob/master/text/1122-language-semver.md) та [стандартної бібліотеки](https://github.com/rust-lang/rfcs/blob/master/text/1105-api-evolution.md).
 
-Rust maintains three "release channels": stable, beta, and nightly. Stable and beta are updated every six weeks, with the current nightly becoming the new beta, and the current beta becoming the new stable. Language and standard library features marked unstable or hidden behind feature gates may only be used on the nightly release channel. New features land as unstable, and are "ungated" once approved by the core team and relevant subteams. This approach allows for experimentation while providing strong backwards-compatibility guarantees for the stable channel.
+Rust підтримує три "канали випусків": стабільний, бета та нічний. Стабільний та бета оновлюються кожні шість тижнів, із тим, що поточний нічний випуск стає новою бетою і поточна бета стає новим стабільним. Функції мови та стандартної бібліотеки, позначені як нестабільні чи приховані за шлюзами функцій можуть бути використані лише у каналі нічних випусків. Нові функції постачаються як нестабільні і "відправляються" лише за згоди основної команди та відповідних підкоманд. Такий підхід дозволяє експериментувати, зберігаючи стійку зворотню сумісність у стабільному каналі.
 
-For additional details, read the Rust blog post ["Stability as a Deliverable."](http://blog.rust-lang.org/2014/10/30/Stability.html)
+За більш детальною інформацією звертайтесь до публікації у блозі Rust ["Stability as a Deliverable."](http://blog.rust-lang.org/2014/10/30/Stability.html)
 
 <h3><a href="#can-i-use-unstable-features-on-the-beta-or-stable-channel" name="can-i-use-unstable-features-on-the-beta-or-stable-channel">
-Can I use unstable features on the beta or stable channel?
+Чи можу я використовувати нестабільні функції у бета чи стабільному каналі?
 </a></h3>
 
-No, you cannot. Rust works hard to provide strong guarantees about the stability of the features provided on the beta and stable channels. When something is unstable, it means that we can't provide those guarantees for it yet, and don't want people relying on it staying the same. This gives us the opportunity to try changes in the wild on the nightly release channel, while still maintaining strong guarantees for people seeking stability.
+Ні, ви не можете. Rust важко працює над забезпеченням надійних гарантій стабільності функцій, які постачаються у бета та стабільний канал. Якщо щось нестабільне, це означає, що ми ще не можемо надати таких гарантій, і не хочемо, щоб люди на них покладались. Це дає нам можливість спробувати зміни взвовж і впоперек на каналі нічних випусків, при тому все ще підтримувати надійні гарантії для людей, яким необхідна стабільність.
 
-Things stabilize all the time, and the beta and stable channels update every six weeks, with occasional fixes accepted into beta at other times. If you're waiting for a feature to be available without using the nightly release channel, you can locate its tracking issue by checking the [`B-unstable`](https://github.com/rust-lang/rust/issues?q=is%3Aissue+is%3Aopen+tracking+label%3AB-unstable) tag on the issue tracker.
+Все постійно стабілізується і бета та стабільний канал оновлюється кожні шість тижнів із нечастими виправленнями в бета каналі час від часу. Якщо ви очікуєте на функціональність, яка має бути доступна без використання каналу нічних випусків - ви можете відстежити її, перевіряючи [`B-unstable`](https://github.com/rust-lang/rust/issues?q=is%3Aissue+is%3Aopen+tracking+label%3AB-unstable) мітку у системі відслідковування помилок.
 
 <h3><a href="#what-are-feature-gates" name="what-are-feature-gates">
-What are "Feature Gates"?
+Що таке "шлюзи функцій"?
 </a></h3>
 
-"Feature gates" are the mechanism Rust uses to stabilize features of the compiler, language, and standard library. A feature that is "gated" is accessible only on the nightly release channel, and then only when it has been explicitly enabled through `#[feature]` attributes or the `-Z unstable-options` command line argument. When a feature is stabilized it becomes available on the stable release channel, and does not need to be explicitly enabled. At that point the feature is considered "ungated". Feature gates allow developers to test experimental features while they are under development, before they are available in the stable language.
+"Шлюзи функцій" - це механізм, який Rust використовує для стабілізацій функцій компілятора, мови та стандартної бібліотеки. Функція "за шлюзом" доступна лише у каналі нічних випусків, а далі - лише коли явно увімкнена через `#[feature]` атрибути або аргумент командного рядка `-Z unstable-options`. Коли функцію стабілізовано - вона стає доступною в стабільному каналі і не потребує явного увімкнення. З цього моменту функція вважається "відправленою". Шлюзи функцій дозволяють розробникам тестувати експериментальні функції на стадії розробки, до того, як вони стануть доступними у стабільній мові.
 
 <h3><a href="#why-a-dual-mit-asl2-license" name="why-a-dual-mit-asl2-license">
-Why a dual MIT/ASL2 License?
+Чому подвійна MIT/ASL2 ліцензія?
 </a></h3>
 
-The Apache license includes important protection against patent aggression, but it is not compatible with the GPL, version 2. To avoid problems using Rust with GPL2, it is alternately MIT licensed.
+Ліцензія Apache містить важливий захист проти патентної агресії, але вона не сумісна із GPL версії 2. Аби уникнути проблем використання Rust із GPL2 її також ліцензували із застосуванням MIT.
 
 <h3><a href="#why-a-permissive-license" name="why-a-permissive-license">
-Why a BSD-style permissive license rather than MPL or tri-license?
+Чому дозвільні ліцензії типу BSD, а не MPL або потрійне ліцензування?
 </a></h3>
 
-This is partly due to preference of the original developer (Graydon), and partly due to the fact that languages tend to have a wider audience and more diverse set of possible embeddings and end-uses than products such as web browsers. We'd like to appeal to as many of those potential contributors as possible.
+Частково це пояснюється вподобаннями оригінального розробника Грейдона (Graydon) і, частково, через те, що мови, як правило, мають ширшу аудиторію та більш різноманітний набір можливих вбудовувань та кінцевих використань, аніж такі продукти, як веб-браузери. Ми хотіли б залучити якомога більше потенційних учасників.
 
 <h2 id="performance">Продуктивність</h2>
 
