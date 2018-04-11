@@ -8,7 +8,7 @@ title: Часті Питання &middot; Мова програмування Ru
 <p class="faq-intro">
 Ця сторінка покликана дати відповідь на загальні питання про мову програмування Rust.
 Це не повноцінний посібник з мови, не інструмент її вивчення. 
-Її мета - відповісти на часті запитання, які виникають у людей із спільноти Rust і прояснити причини, які стоять за
+Її мета - відповісти на часті питання, які виникають у людей зі спільноти Rust і прояснити причини, які стоять за
 деякими рішеннями в дизайні Rust.
 </p>
 
@@ -52,12 +52,12 @@ title: Часті Питання &middot; Мова програмування Ru
 Яка мета даного проекту?
 </a></h3>
 
-Спроектувати та імплементувати безпечну, рівночасну, практичну системну мову.
+Спроектувати та імплементувати безпечну, паралельну, практичну системну мову.
 
 Rust існує тому, що інші мови на цьому рівні абстракції та ефективності є незадовільними. Зокрема:
 
 1. Замало уваги приділяється безпеці.
-2. Вони мають слабку підтримку рівночасності.
+2. Вони мають слабку підтримку паралелизму.
 3. Їм бракує практичної доступності.
 4. Вони пропонують обмежений контроль ресурсів.
 
@@ -67,7 +67,7 @@ Rust є альтернативою, яка пропонує ефективний
 Чи даний проект контролюється Mozilla?
 </a></h3>
 
-Ні. Rust розпочався як сторонній проект Грейдона Гоара (Graydon Hoare) із частковою зайнятістю у 2006 і залишався таким більше 3 років. Mozilla долучилась у 2009, як тільки мова стала достатньо зрілою для того, аби виконати базові тести та продемонструвати ключові концепції. Незважаючи на те, що Mozilla є спонсором, Rust розробляється спільнотою ентузіастів з багатьох різних місць по всьому світі. [Команда Rust](https://www.rust-lang.org/team.html) складається як із представників Mozilla так і не-Mozilla, до того ж `rust` насьогодні нараховує більше [1,900 унікальних авторів](https://github.com/rust-lang/rust/) на GitHub.
+Ні. Rust розпочався як сторонній проект Грейдона Гоара (Graydon Hoare) із частковою зайнятістю у 2006 і залишався таким більше 3 років. Mozilla долучилась у 2009, як тільки мова стала достатньо зрілою для того, аби виконати базові тести та продемонструвати ключові концепції. Незважаючи на те, що Mozilla є спонсором, Rust розробляється спільнотою ентузіастів з багатьох куточків світу. [Команда Rust](https://www.rust-lang.org/team.html) складається як із представників Mozilla так і не-Mozilla, до того ж `rust` насьогодні нараховує більше [1,900 унікальних авторів](https://github.com/rust-lang/rust/) на GitHub.
 
 Що стосується [управління проектом](https://github.com/rust-lang/rfcs/blob/master/text/1068-rust-governance.md) - Rust керується основною командою, яка визначає бачення та пріоритети на проекті,
 спрямовуючи в глобальній перспективі. Також є підкоманди, спрямовані на розвиток та розробку конкретних областей, включаючи ядро мови, компілятор, бібліотеки Rust, інструменти Rust, модерацію офіційних спільнот Rust. Дизайн у кожній із цих областей проходить через [процедуру RFC](https://github.com/rust-lang/rfcs). Для змін, які не вимагають RFC, рішення приймаються через запити на забирання змін [репозиторію `rustc`](https://github.com/rust-lang/rust).
@@ -119,8 +119,8 @@ TODO: Write this answer.
 Є декілька шляхів. Ви можете:
 
 - Опублікувати на [users.rust-lang.org](https://users.rust-lang.org/) - офіційному форумі користувачів Rust
-- Запитати в офіційному [Rust IRC каналі](https://chat.mibbit.com/?server=irc.mozilla.org&channel=%23rust) (#rust на irc.mozilla.org)
-- Запитати на [Stack Overflow](https://stackoverflow.com/questions/tagged/rust) із поміткою "rust"
+- Запитати в офіційному [Rust IRC-каналі](https://chat.mibbit.com/?server=irc.mozilla.org&channel=%23rust) (#rust на irc.mozilla.org)
+- Запитати на [Stack Overflow](https://stackoverflow.com/questions/tagged/rust) із позначкою "rust"
 - Опублікувати на [/r/rust](https://www.reddit.com/r/rust) - неофіційному сабреддіті Rust
 
 <h3><a href="#why-has-rust-changed-so-much" name="why-has-rust-changed-so-much">
@@ -135,23 +135,23 @@ TODO: Write this answer.
 
 Версіонування мови Rust здійснюється відповідно до [SemVer](http://semver.org/) із зворотньо несумісними змінами стабільних API, дозволеними лише в мінорних версіях, якщо ці зміни виправляють помилки компілятора, закривають вади безпеки або змінюють диспетчеризацію чи виведення типів, які вимагають додаткових анотацій. Більш детальні інструкції щодо змін мінорних версій доступні (як схвалені RFC) для [мови](https://github.com/rust-lang/rfcs/blob/master/text/1122-language-semver.md) та [стандартної бібліотеки](https://github.com/rust-lang/rfcs/blob/master/text/1105-api-evolution.md).
 
-Rust підтримує три "канали випусків": стабільний, бета та нічний. Стабільний та бета оновлюються кожні шість тижнів, із тим, що поточний нічний випуск стає новою бетою і поточна бета стає новим стабільним. Функції мови та стандартної бібліотеки, позначені як нестабільні чи приховані за шлюзами функцій можуть бути використані лише у каналі нічних випусків. Нові функції постачаються як нестабільні і "відправляються" лише за згоди основної команди та відповідних підкоманд. Такий підхід дозволяє експериментувати, зберігаючи стійку зворотню сумісність у стабільному каналі.
+Rust підтримує три "канали випусків": стабільний, бета та нічний. Стабільний та бета оновлюються кожні шість тижнів, із тим, що поточний нічний випуск стає новою бетою і поточна бета стає новим стабільним. Нові можливості мови та стандартної бібліотеки, позначені як нестабільні чи приховані за шлюзами нових можливостей можуть бути використані лише у каналі нічних випусків. Нові можливості постачаються як нестабільні і "відправляються" лише за згоди основної команди та відповідних підкоманд. Такий підхід дозволяє експериментувати, зберігаючи стійку зворотню сумісність у стабільному каналі.
 
 За більш детальною інформацією звертайтесь до публікації у блозі Rust ["Stability as a Deliverable."](http://blog.rust-lang.org/2014/10/30/Stability.html)
 
 <h3><a href="#can-i-use-unstable-features-on-the-beta-or-stable-channel" name="can-i-use-unstable-features-on-the-beta-or-stable-channel">
-Чи можу я використовувати нестабільні функції у бета чи стабільному каналі?
+Чи можу я використовувати нестабільні нові можливості у бета чи стабільному каналі?
 </a></h3>
 
-Ні, ви не можете. Rust важко працює над забезпеченням надійних гарантій стабільності функцій, які постачаються у бета та стабільний канал. Якщо щось нестабільне, це означає, що ми ще не можемо надати таких гарантій, і не хочемо, щоб люди на них покладались. Це дає нам можливість спробувати зміни взвовж і впоперек на каналі нічних випусків, при тому все ще підтримувати надійні гарантії для людей, яким необхідна стабільність.
+Ні, ви не можете. Rust важко працює над забезпеченням надійних гарантій стабільності нових можливостей, які постачаються у бета та стабільний канал. Якщо щось нестабільне, це означає, що ми ще не можемо надати таких гарантій, і не хочемо, щоб люди на них покладались. Це дає нам змогу як завгодно експериментувати на каналі нічних випусків, при тому все ще підтримувати надійні гарантії для людей, яким необхідна стабільність.
 
-Все постійно стабілізується і бета та стабільний канал оновлюється кожні шість тижнів із нечастими виправленнями в бета каналі час від часу. Якщо ви очікуєте на функціональність, яка має бути доступна без використання каналу нічних випусків - ви можете відстежити її, перевіряючи [`B-unstable`](https://github.com/rust-lang/rust/issues?q=is%3Aissue+is%3Aopen+tracking+label%3AB-unstable) мітку у системі відслідковування помилок.
+Все постійно стабілізується і бета та стабільний канал оновлюється кожні шість тижнів із нечастими виправленнями в бета каналі час від часу. Якщо ви очікуєте на нові можливості, які мають бути доступні без використання каналу нічних випусків - ви можете відстежити їх, перевіряючи позначку [`B-unstable`](https://github.com/rust-lang/rust/issues?q=is%3Aissue+is%3Aopen+tracking+label%3AB-unstable) у системі відслідковування помилок.
 
 <h3><a href="#what-are-feature-gates" name="what-are-feature-gates">
-Що таке "шлюзи функцій"?
+Що таке "шлюзи нових можливостей"?
 </a></h3>
 
-"Шлюзи функцій" - це механізм, який Rust використовує для стабілізацій функцій компілятора, мови та стандартної бібліотеки. Функція "за шлюзом" доступна лише у каналі нічних випусків, а далі - лише коли явно увімкнена через `#[feature]` атрибути або аргумент командного рядка `-Z unstable-options`. Коли функцію стабілізовано - вона стає доступною в стабільному каналі і не потребує явного увімкнення. З цього моменту функція вважається "відправленою". Шлюзи функцій дозволяють розробникам тестувати експериментальні функції на стадії розробки, до того, як вони стануть доступними у стабільній мові.
+"Шлюзи нових можливостей" - це механізм, який Rust використовує для стабілізації нових можливостей компілятора, мови та стандартної бібліотеки. Нова можливість "за шлюзом" доступна лише у каналі нічних випусків, а далі - лише коли явно увімкнена через `#[feature]` атрибути або аргумент командного рядка `-Z unstable-options`. Коли нову можливість стабілізовано - вона стає доступною в стабільному каналі і не потребує явного увімкнення. З цього моменту дана нова можливість вважається "відправленою". Шлюзи нових можливостей дозволяють розробникам тестувати експериментальні нові можливості на стадії розробки, до того, як вони стануть доступними у стабільній мові.
 
 <h3><a href="#why-a-dual-mit-asl2-license" name="why-a-dual-mit-asl2-license">
 Чому подвійна MIT/ASL2 ліцензія?
@@ -168,36 +168,34 @@ Rust підтримує три "канали випусків": стабільн
 <h2 id="performance">Продуктивність</h2>
 
 <h3><a href="#how-fast-is-rust" name="how-fast-is-rust">
-How fast is Rust?
+Наскільки Rust швидка?
 </a></h3>
 
-Fast! Rust is already competitive with idiomatic C and C++ in a number of benchmarks (like the [Benchmarks Game](https://benchmarksgame.alioth.debian.org/u64q/compare.php?lang=rust&lang2=gpp) and [others](https://github.com/kostya/benchmarks)).
+Швидка! Rust наразі конкурує із ідеоматичними C та C++ у ряді тестів (наприклад [Benchmarks Game](https://benchmarksgame.alioth.debian.org/u64q/compare.php?lang=rust&lang2=gpp) та [інші](https://github.com/kostya/benchmarks)).
 
-Like C++, Rust takes [zero-cost abstractions](http://blog.rust-lang.org/2015/05/11/traits.html) as one of its core principles: none of Rust's abstractions impose a global performance penalty, nor is there overhead from any runtime system in the traditional sense.
+Подібно до C++, Rust притримується [абстракцій нульової вартості](http://blog.rust-lang.org/2015/05/11/traits.html), як одного із ключових принципів: жодна із абстракцій Rust не призводить до глобального зниження продуктивності, так само, як немає накладних витрат від жодної системи часу виконання в традиційному розумінні.
 
-Given that Rust is built on LLVM and strives to resemble Clang from LLVM's perspective, any LLVM performance improvements also help Rust. In the long run, the richer information in Rust's type system should also enable optimizations that are difficult or impossible for C/C++ code.
+Враховуючи, що Rust побудована на LLVM і намагається бути подібною до Clang із точки зору LLVM, будь-які покращення в швидкодії LLVM також допоможуть і Rust. У довгостроковій перспективі більш багата інформація системі типів Rust має також привести до оптимізацій, які є складними або неможливими для C/C++ коду.
 
 <h3><a href="#is-rust-garbage-collected" name="is-rust-garbage-collected">
-Is Rust garbage collected?
+Чи у Rust збирається сміття?
 </a></h3>
 
-No. One of Rust's key innovations is guaranteeing memory safety (no segfaults) *without* requiring garbage collection.
+Ні. Однією з ключових інновацій Rust є гарантія безпеки пам'яті *без* збирання сміття.
 
-By avoiding GC, Rust can offer numerous benefits: predictable cleanup of resources, lower overhead for memory management, and essentially no runtime system. All of these traits make Rust lean and easy to embed into arbitrary contexts, and make it much easier to [integrate Rust code with languages that have a GC](http://calculist.org/blog/2015/12/23/neon-node-rust/).
+Завдяки уникненню збирання сміття, Rust може запропонувати безліч переваг: передбачуване очищення ресурсів, зниження накладних витрат на керування пам'яттю та, по суті, відсутність системи часу виконання. Всі ці риси дозволяють вбудувати Rust в довільні контексти та дозволяють значно легше [інтегрувати код Rust із мовами, які мають механізм збирання сміття](http://calculist.org/blog/2015/12/23/neon-node-rust/).
 
-Rust avoids the need for GC through its system of ownership and borrowing, but that same system helps with a host of other problems, including
-[resource management in general](http://blog.skylight.io/rust-means-never-having-to-close-a-socket/) and [concurrency](http://blog.rust-lang.org/2015/04/10/Fearless-Concurrency.html).
+Rust уникає необхідності збирати сміття завдяки системі власності та запозичень, але ця ж система допомагає з безліччю інших проблем, включаючи
+[управління ресурсами вцілому](http://blog.skylight.io/rust-means-never-having-to-close-a-socket/) та [паралелизм](http://blog.rust-lang.org/2015/04/10/Fearless-Concurrency.html).
 
-For when single ownership does not suffice, Rust programs rely on the standard reference-counting smart pointer type, [`Rc`](https://doc.rust-lang.org/std/rc/struct.Rc.html), and its thread-safe counterpart, [`Arc`](https://doc.rust-lang.org/std/sync/struct.Arc.html), instead of GC.
+За умови, коли одиночної власності не достатньо - програми Rust використовують розумні вказівники із підрахунком посилань [`Rc`](https://doc.rust-lang.org/std/rc/struct.Rc.html) та його багатонитево-безпечний аналог [`Arc`](https://doc.rust-lang.org/std/sync/struct.Arc.html), а не збирання сміття.
 
-We are however investigating *optional* garbage collection as a future
-extension. The goal is to enable smooth integration with
-garbage-collected runtimes, such as those offered by the
-[Spidermonkey](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey)
-and [V8](https://developers.google.com/v8/?hl=en) JavaScript engines.
-Finally, some people have investigated implementing
-[pure Rust garbage collectors](https://manishearth.github.io/blog/2015/09/01/designing-a-gc-in-rust/)
-without compiler support.
+Проте ми розглядаємо *необов'язкове* збирання сміття, як майбутнє розширення.
+Наша мета - забезпечити безперешкодну інтеграцію із середовищами виконання із збирачем сміття, такими, як рушії JavaScript
+[Spidermonkey](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey) та [V8](https://developers.google.com/v8/?hl=en).
+Зрештою, деякі люди досліджували реалізацію
+[чистих Rust-ових збирачів сміття](https://manishearth.github.io/blog/2015/09/01/designing-a-gc-in-rust/)
+без підтримки компілятора.
 
 <h3><a href="#why-is-my-program-slow" name="why-is-my-program-slow">
 Why is my program slow?
