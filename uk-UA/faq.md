@@ -252,32 +252,32 @@ Rust уникає необхідності збирати сміття завд�
 <h2 id="syntax">Синтаксис</h2>
 
 <h3><a href="#why-curly-braces" name="why-curly-braces">
-Why curly braces? Why can't Rust's syntax be like Haskell's or Python's?
+Чому фігурні дужки? Чому синтаксис Rust не може бути назразок Haskell або Python?
 </a></h3>
 
-Use of curly braces to denote blocks is a common design choice in a variety of programming languages, and Rust's consistency is useful for people already familiar with the style.
+Використання фігурних дужок для позначення блоків є загальновизнаним вибором у багатьох мов програмування і вибір Rust піде на користь людям, які вже знайомі із даним стилем.
 
-Curly braces also allow for more flexible syntax for the programmer and a simpler parser in the compiler.
+Фігурні дужки також дозволяють зробити синтаксис гнучкішим для програміста і спрощують парсер для компілятора.
 
 <h3><a href="#why-brackets-around-blocks" name="why-brackets-around-blocks">
-I can leave out parentheses on <code>if</code> conditions, so why do I have to put brackets around single line blocks? Why is the C style not allowed?
+Я можу упустити дужки в <code>if</code> умовах, то чому ж я змушених ставити фігурні дужки навколо блоку в один рядок? Чому не дозволено стиль C?
 </a></h3>
 
-Whereas C requires mandatory parentheses for `if`-statement conditionals but leaves brackets optional, Rust makes the opposite choice for its `if`-expressions. This keeps the conditional clearly separate from the body and avoids the hazard of optional brackets, which can lead to easy-to-miss errors during refactoring, like Apple's [goto fail](https://gotofail.com/) bug.
+В той час як C вимагає обов'язкові дужки для `if`-стверджень, але залишає фігурні дужки необов'язковими, Rust робить зворотній вибір для своїх `if`-виразів. Це дозволяє чітко відділити умову від тіла та уникнути ризику із необов'язковими фігурними дужками, що може спричинити помилки, які-легко-упустити під час рефакторингу, як-то [goto fail](https://gotofail.com/) помилка у Apple.
 
 <h3><a href="#why-no-literal-syntax-for-dictionaries" name="why-no-literal-syntax-for-dictionaries">
-Why is there no literal syntax for dictionaries?
+Чому немає синтаксису літералів для словників?
 </a></h3>
 
-Rust's overall design preference is for limiting the size of the *language* while enabling powerful *libraries*. While Rust does provide initialization syntax for arrays and string literals, these are the only collection types built into the language. Other library-defined types, including the ubiquitous [`Vec`][Vec] collection type, use macros for initialization like the [`vec!`][VecMacro] macro.
+Загальний дизайн мови Rust передбачає обмеження розміру *мови* при тому надає потужності *бібліотекам*. Оскільки Rust надає синтаксис літералів ініціалізації масивів та рядків то це лише тому, що лише ці колекції включено в мову. Інші типи, визначені в бібліотеках, включаючи всюдисущий тип колекцій [`Vec`][Vec], використовують макроси для ініціалізації, як то [`vec!`][VecMacro]-макрос.
 
-This design choice of using Rust's macro facilities to initialize collections will likely be extended generically to other collections in the future, enabling simple initialization of not only [`HashMap`][HashMap] and [`Vec`][Vec], but also other collection types such as [`BTreeMap`][BTreeMap]. In the meantime, if you want a more convenient syntax for initializing collections, you can [create your own macro](https://stackoverflow.com/questions/27582739/how-do-i-create-a-hashmap-literal) to provide it.
+Цей вибір у дизайні Rust, щодо ініціалізацій колекцій, дає можливість розширювати його, узагальнюючи на інші колекції в майбутньому, дозволяючи просто ініціалізувати не лише [`HashMap`][HashMap] та [`Vec`][Vec], але й інші типи колекцій, такі як [`BTreeMap`][BTreeMap]. У той же час, якщо ви хочете мати більш зручний синтаксис ініціалізації колекцій - ви можете забезпечити його, [створивши свій власний макрос](https://stackoverflow.com/questions/27582739/how-do-i-create-a-hashmap-literal).
 
 <h3><a href="#when-should-i-use-an-implicit-return" name="when-should-i-use-an-implicit-return">
-When should I use an implicit return?
+Коли мені слід використовувати неявне повернення?
 </a></h3>
 
-Rust is a very expression-oriented language, and "implicit returns" are part of that design. Constructs like `if`s, `match`es, and normal blocks are all expressions in Rust. For example, the following code checks if an [`i64`][i64] is odd, returning the result by simply yielding it as a value:
+Rust - мова, дуже орієнтована на вирази і "неявне повернення" - це частина її дизайну. Конструкції на зрозок `if`-ів, `match`-ів і звичайні блоки - це все вирази у Rust. Наприклад, наступний блок перевіряє чи [`i64`][i64] є парним, просто повертає результат передаючи значення:
 
 ```rust
 fn is_odd(x: i64) -> bool {
@@ -285,7 +285,7 @@ fn is_odd(x: i64) -> bool {
 }
 ```
 
-Although it can be simplified even further like so:
+Хоча його можна ще більше спростити:
 
 ```rust
 fn is_odd(x: i64) -> bool {
@@ -293,31 +293,31 @@ fn is_odd(x: i64) -> bool {
 }
 ```
 
-In each example, the last line of the function is the return value of that function. It is important to note that if a function ends in a semicolon, its return type will be `()`, indicating no returned value. Implicit returns must omit the semicolon to work.
+В кожному прикладі останній рядок функції є значенням, яке повертається із функції. Важливо зауважити, що якщо функція закінчується крапкою з комою, то тип, що із неї повертається буде `()`, що означає відсутність значення. Неявні повернення для своєї роботи мають уникати крапки з комою.
 
-Explicit returns are only used if an implicit return is impossible because you are returning before the end of the function's body. While each of the above functions could have been written with a `return` keyword and semicolon, doing so would be unnecessarily verbose, and inconsistent with the conventions of Rust code.
+Явні повернення використовуються лише у випадку, коли неявні - неможливі через те, що ви повертаєте значення, не досягнувши кінця тіла функції. У той час, як кожна із вищенаведених функцій може бути написана із використанням ключового слова `return` та крапки з комою, робити так не обов'язково та багатослівно, а також суперечитиме правилам оформлення коду Rust.
 
 <h3><a href="#why-arent-function-signatures-inferred" name="why-arent-function-signatures-inferred">
-Why aren't function signatures inferred?
+Чому сигнатури функцій не виводяться автоматично?
 </a></h3>
 
-In Rust, declarations tend to come with explicit types, while actual code has its types inferred. There are several reasons for this design:
+У Rust оголошення повинні мати явно вказані типи, в той час, як типи у фактичному коді можуть виводитись автоматично. Такий дизнайн прийнято з наступних причин:
 
-- Mandatory declaration signatures help enforce interface stability at both the module and crate level.
-- Signatures improve code comprehension for the programmer, eliminating the need for an IDE running an inference algorithm across an entire crate to be able to guess at a function's argument types; it's always explicit and nearby.
-- Mechanically, it simplifies the inference algorithm, as inference only requires looking at one function at a time.
+- Обов'язкове оголошення сигнатур допомагає забезпечити стабільність інтерфейсу на рівні модуля та пакету.
+- Сигнатури покращують розуміння коду програмістами, усуваючи необхідність запуску в IDE алгоритму автоматичного виведення типів крізь увесь пакет, аби визначити тип аргументів функції; вони завжди явні і знаходяться поряд.
+- Фактично це спрощує алгоритм виведення типів, так як в цьому випадку виведення розглядає лише одну функцію за раз.
 
 <h3><a href="#why-does-match-have-to-be-exhaustive" name="why-does-match-have-to-be-exhaustive">
-Why does <code>match</code> have to be exhaustive?
+Чому <code>match</code> повинен бути вичерпним?
 </a></h3>
 
-To aid in refactoring and clarity.
+Щоб допомогти у рефакторингу та ясності.
 
-First, if every possibility is covered by the `match`, adding variants to the `enum` in the future will cause a compilation failure, rather than an error at runtime. This type of compiler assistance makes fearless refactoring possible in Rust.
+По-перше, якщо всі варіанти покриваються `match` - додавання варіантів до `enum` в майбутньому призведе до помилки компіляції, а не до помилки часу виконання. При такій допомозі від компілятора рефакторингу в Rust можна не боятись.
 
-Second, exhaustive checking makes the semantics of the default case explicit: in general, the only safe way to have a non-exhaustive `match` would be to panic the thread if nothing is matched. Early versions of Rust did not require `match` cases to be exhaustive and it was found to be a great source of bugs.
+По-друге, вичерпні перевірки роблять семантику варіанту за замовчуванням явною: загалом, єдиний шлях мати невичерпний `match` - це аварійно завершити потік виконання, якщо відповідного варіанту не знайдено. Ранні версії Rust не вимагали варіантам `match` бути вичерпними і це було щедрим джерелом помилок.
 
-It is easy to ignore all unspecified cases by using the `_` wildcard:
+Усі невизначені випадки дуже легко проігнорувати, використовуючи підстановочний символ `_`:
 
 ```rust
 match val.do_something() {
